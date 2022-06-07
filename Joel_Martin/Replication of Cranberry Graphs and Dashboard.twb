@@ -1,0 +1,1774 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' inline='true' name='federated.1dcn20d1gbml2g11gml021phb4mt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cranberries Nat' name='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/joelm/Documents/DSPG Work/AgMRC Interactive Commodity Reports/DataScience401-main/DataScience401-main/Max_Wisnieski/Cranberries Nat.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Acres Grown and Harvested' table='[&apos;Acres Grown and Harvested$&apos;]' type='table'>
+          <columns gridOrigin='A1:E71:no:A1:E71:0' header='yes' outcome='2'>
+            <column datatype='string' name='Program' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='integer' name='Acres Grown' ordinal='3' />
+            <column datatype='integer' name='Acres Harvested' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Acres Grown and Harvested' table='[&apos;Acres Grown and Harvested$&apos;]' type='table'>
+            <columns gridOrigin='A1:E71:no:A1:E71:0' header='yes' outcome='2'>
+              <column datatype='string' name='Program' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+              <column datatype='string' name='State' ordinal='2' />
+              <column datatype='integer' name='Acres Grown' ordinal='3' />
+              <column datatype='integer' name='Acres Harvested' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Operations Harvested' table='[&apos;Operations Harvested$&apos;]' type='table'>
+            <columns gridOrigin='A1:D52:no:A1:D52:0' header='yes' outcome='2'>
+              <column datatype='string' name='Program' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+              <column datatype='string' name='State' ordinal='2' />
+              <column datatype='integer' name='Operations Harvested' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Utilized Prodution' table='[&apos;Utilized Prodution$&apos;]' type='table'>
+            <columns gridOrigin='A1:E82:no:A1:E82:0' header='yes' outcome='6'>
+              <column datatype='string' name='Program' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+              <column datatype='string' name='State' ordinal='2' />
+              <column datatype='integer' name='Utilized Production (Dollars)' ordinal='3' />
+              <column datatype='integer' name='Utilized Production (Barrels)' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Yield Barrels Per Acre' table='[&apos;Yield Barrels Per Acre$&apos;]' type='table'>
+            <columns gridOrigin='A1:D52:no:A1:D52:0' header='yes' outcome='6'>
+              <column datatype='string' name='Program' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+              <column datatype='string' name='State' ordinal='2' />
+              <column datatype='real' name='Yield Barrels/Acre' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Acres Grown]' value='[Acres Grown and Harvested].[Acres Grown]' />
+          <map key='[Acres Harvested]' value='[Acres Grown and Harvested].[Acres Harvested]' />
+          <map key='[Operations Harvested]' value='[Operations Harvested].[Operations Harvested]' />
+          <map key='[Program (Operations Harvested)]' value='[Operations Harvested].[Program]' />
+          <map key='[Program (Utilized Prodution)]' value='[Utilized Prodution].[Program]' />
+          <map key='[Program (Yield Barrels Per Acre)]' value='[Yield Barrels Per Acre].[Program]' />
+          <map key='[Program]' value='[Acres Grown and Harvested].[Program]' />
+          <map key='[State (Operations Harvested)]' value='[Operations Harvested].[State]' />
+          <map key='[State (Utilized Prodution)]' value='[Utilized Prodution].[State]' />
+          <map key='[State (Yield Barrels Per Acre)]' value='[Yield Barrels Per Acre].[State]' />
+          <map key='[State]' value='[Acres Grown and Harvested].[State]' />
+          <map key='[Utilized Production (Barrels)]' value='[Utilized Prodution].[Utilized Production (Barrels)]' />
+          <map key='[Utilized Production (Dollars)]' value='[Utilized Prodution].[Utilized Production (Dollars)]' />
+          <map key='[Year (Operations Harvested)]' value='[Operations Harvested].[Year]' />
+          <map key='[Year (Utilized Prodution)]' value='[Utilized Prodution].[Year]' />
+          <map key='[Year (Yield Barrels Per Acre)]' value='[Yield Barrels Per Acre].[Year]' />
+          <map key='[Year]' value='[Acres Grown and Harvested].[Year]' />
+          <map key='[Yield Barrels/Acre]' value='[Yield Barrels Per Acre].[Yield Barrels/Acre]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>6</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E71:no:A1:E71:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Operations Harvested]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D52:no:A1:D52:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E82:no:A1:E82:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Yield Barrels Per Acre]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D52:no:A1:D52:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Program]</local-name>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acres Grown</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Acres Grown]</local-name>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias>Acres Grown</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acres Harvested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Acres Harvested]</local-name>
+            <parent-name>[Acres Grown and Harvested]</parent-name>
+            <remote-alias>Acres Harvested</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Program (Operations Harvested)]</local-name>
+            <parent-name>[Operations Harvested]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Operations Harvested)]</local-name>
+            <parent-name>[Operations Harvested]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (Operations Harvested)]</local-name>
+            <parent-name>[Operations Harvested]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operations Harvested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operations Harvested]</local-name>
+            <parent-name>[Operations Harvested]</parent-name>
+            <remote-alias>Operations Harvested</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Program (Utilized Prodution)]</local-name>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Utilized Prodution)]</local-name>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (Utilized Prodution)]</local-name>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Utilized Production (Dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Utilized Production (Dollars)]</local-name>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias>Utilized Production (Dollars)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Utilized Production (Barrels)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Utilized Production (Barrels)]</local-name>
+            <parent-name>[Utilized Prodution]</parent-name>
+            <remote-alias>Utilized Production (Barrels)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Program (Yield Barrels Per Acre)]</local-name>
+            <parent-name>[Yield Barrels Per Acre]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Yield Barrels Per Acre)]</local-name>
+            <parent-name>[Yield Barrels Per Acre]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (Yield Barrels Per Acre)]</local-name>
+            <parent-name>[Yield Barrels Per Acre]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yield Barrels/Acre</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Yield Barrels/Acre]</local-name>
+            <parent-name>[Yield Barrels Per Acre]</parent-name>
+            <remote-alias>Yield Barrels/Acre</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Grown:qk]&quot;' value='Grown' />
+          <alias key='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Harvested:qk]&quot;' value='Harvested' />
+          <alias key='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk]&quot;' value='Barrels' />
+          <alias key='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk]&quot;' value='Dollars' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Acres Grown]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Acres Harvested]' role='measure' type='quantitative' />
+      <column caption='Operations Harvested (Operations Harvested)' datatype='integer' name='[Operations Harvested]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State (Operations Harvested)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State (Utilized Prodution)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State (Yield Barrels Per Acre)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Utilized Production (Barrels)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Utilized Production (Dollars)]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Year (Operations Harvested)]' role='dimension' type='quantitative' />
+      <column datatype='date' name='[Year (Utilized Prodution)]' role='dimension' type='quantitative' />
+      <column datatype='date' name='[Year (Yield Barrels Per Acre)]' role='dimension' type='quantitative' />
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[Yield Barrels/Acre]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Acres Grown and Harvested' datatype='table' name='[__tableau_internal_object_id__].[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Operations Harvested' datatype='table' name='[__tableau_internal_object_id__].[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Utilized Prodution' datatype='table' name='[__tableau_internal_object_id__].[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Yield Barrels Per Acre' datatype='table' name='[__tableau_internal_object_id__].[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Operations Harvested_3A69223B253E4D608F2AC3FD70821321]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Operations Harvested_3A69223B253E4D608F2AC3FD70821321:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Utilized Prodution_DF211517E9274A1ABF1306939D5985A1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Utilized Prodution_DF211517E9274A1ABF1306939D5985A1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Acres Grown]' derivation='Sum' name='[sum:Acres Grown:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Acres Harvested]' derivation='Sum' name='[sum:Acres Harvested:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Operations Harvested]' derivation='Sum' name='[sum:Operations Harvested:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Utilized Production (Barrels)]' derivation='Sum' name='[sum:Utilized Production (Barrels):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Utilized Production (Dollars)]' derivation='Sum' name='[sum:Utilized Production (Dollars):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Yield Barrels/Acre]' derivation='Sum' name='[sum:Yield Barrels/Acre:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Grown:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[__tableau_internal_object_id__].[cnt:Utilized Prodution_DF211517E9274A1ABF1306939D5985A1:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[__tableau_internal_object_id__].[cnt:Operations Harvested_3A69223B253E4D608F2AC3FD70821321:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Operations Harvested:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Yield Barrels/Acre:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[__tableau_internal_object_id__].[cnt:Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[__tableau_internal_object_id__].[cnt:Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Harvested:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Acres Grown and Harvested' id='Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21'>
+            <properties context=''>
+              <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Acres Grown and Harvested' table='[&apos;Acres Grown and Harvested$&apos;]' type='table'>
+                <columns gridOrigin='A1:E71:no:A1:E71:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Program' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='integer' name='Acres Grown' ordinal='3' />
+                  <column datatype='integer' name='Acres Harvested' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Operations Harvested' id='Operations Harvested_3A69223B253E4D608F2AC3FD70821321'>
+            <properties context=''>
+              <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Operations Harvested' table='[&apos;Operations Harvested$&apos;]' type='table'>
+                <columns gridOrigin='A1:D52:no:A1:D52:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Program' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='integer' name='Operations Harvested' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Utilized Prodution' id='Utilized Prodution_DF211517E9274A1ABF1306939D5985A1'>
+            <properties context=''>
+              <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Utilized Prodution' table='[&apos;Utilized Prodution$&apos;]' type='table'>
+                <columns gridOrigin='A1:E82:no:A1:E82:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Program' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='integer' name='Utilized Production (Dollars)' ordinal='3' />
+                  <column datatype='integer' name='Utilized Production (Barrels)' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Yield Barrels Per Acre' id='Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF'>
+            <properties context=''>
+              <relation connection='excel-direct.0hyfye71o95upj0zuy3bx10lqu1o' name='Yield Barrels Per Acre' table='[&apos;Yield Barrels Per Acre$&apos;]' type='table'>
+                <columns gridOrigin='A1:D52:no:A1:D52:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Program' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='real' name='Yield Barrels/Acre' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Year]' />
+                <expression op='[Year (Operations Harvested)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[State]' />
+                <expression op='[State (Operations Harvested)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21' />
+            <second-end-point object-id='Operations Harvested_3A69223B253E4D608F2AC3FD70821321' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[State]' />
+              <expression op='[State (Utilized Prodution)]' />
+            </expression>
+            <first-end-point object-id='Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21' />
+            <second-end-point object-id='Utilized Prodution_DF211517E9274A1ABF1306939D5985A1' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[State]' />
+              <expression op='[State (Yield Barrels Per Acre)]' />
+            </expression>
+            <first-end-point object-id='Acres Grown and Harvested_9B14CCAB926443BFA084D76D27320B21' />
+            <second-end-point object-id='Yield Barrels Per Acre_C80E266459884259B59402B3A1D813DF' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Annual Utilized Production of Cranberries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'>&lt;Sheet Name&gt; in &lt;</run>
+            <run bold='true' fontalignment='1' fontsize='12'>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='12'>&gt; in Barrels and Dollars ($)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' name='federated.1dcn20d1gbml2g11gml021phb4mt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcn20d1gbml2g11gml021phb4mt'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Utilized Production (Barrels)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Utilized Production (Dollars)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year (Utilized Prodution)]' role='dimension' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Utilized Production (Barrels)]' derivation='Sum' name='[sum:Utilized Production (Barrels):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Utilized Production (Dollars)]' derivation='Sum' name='[sum:Utilized Production (Dollars):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Utilized Prodution)]' derivation='Year-Trunc' name='[tyr:Year (Utilized Prodution):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk]' field-type='quantitative' fold='true' max='968604141' min='-9676812' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk]' scope='rows' value='Barrels' />
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Utilized Prodution):qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk]' scope='rows' value='Dollars ($)' />
+            <encoding attr='space' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Utilized Prodution):qk]' field-type='quantitative' max='#2020-11-08 01:11:28.751#' min='#2006-02-21 07:32:12.287#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk]' field-type='quantitative' max='20044592' min='-200255' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Barrels):qk] + [federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Utilized Production (Dollars):qk])</rows>
+        <cols>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Utilized Prodution):qk]</cols>
+      </table>
+      <simple-id uuid='{FBDD18AF-1DAC-4CCA-AE89-5247E9210320}' />
+    </worksheet>
+    <worksheet name='Total Acres of Cranberries Planted and Harvested'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'>&lt;Sheet Name&gt; for &lt;</run>
+            <run bold='true' fontalignment='1' fontsize='12'>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='12'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' name='federated.1dcn20d1gbml2g11gml021phb4mt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcn20d1gbml2g11gml021phb4mt'>
+            <column datatype='integer' name='[Acres Grown]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Acres Harvested]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Acres Grown]' derivation='Sum' name='[sum:Acres Grown:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Acres Harvested]' derivation='Sum' name='[sum:Acres Harvested:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Grown:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Harvested:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Grown:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Acres Harvested:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;Massachusetts&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]</column>
+            <column>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dcn20d1gbml2g11gml021phb4mt].[Multiple Values]</rows>
+        <cols>([federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year:ok] / [federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{6E6F5D96-35C6-44B9-9880-8720CE71D971}' />
+    </worksheet>
+    <worksheet name='Total Operations with Area Harvested for Cranberries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'>&lt;Sheet Name&gt; in &lt;</run>
+            <run bold='true' fontalignment='1' fontsize='12'>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='12'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' name='federated.1dcn20d1gbml2g11gml021phb4mt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcn20d1gbml2g11gml021phb4mt'>
+            <column caption='Operations Harvested (Operations Harvested)' datatype='integer' name='[Operations Harvested]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='date' name='[Year (Operations Harvested)]' role='dimension' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Operations Harvested]' derivation='Sum' name='[sum:Operations Harvested:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Operations Harvested)]' derivation='Year-Trunc' name='[tyr:Year (Operations Harvested):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Operations Harvested):qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Operations Harvested:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Operations Harvested:qk]</rows>
+        <cols>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Operations Harvested):qk]</cols>
+      </table>
+      <simple-id uuid='{8AE624F5-FCBB-409A-A7ED-DC7E154CC21C}' />
+    </worksheet>
+    <worksheet name='Total Yield of Cranberries measured in Barrles/ACRE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'>&lt;Sheet Name&gt; in &lt;</run>
+            <run bold='true' fontalignment='1' fontsize='12'>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='12'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' name='federated.1dcn20d1gbml2g11gml021phb4mt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcn20d1gbml2g11gml021phb4mt'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='date' name='[Year (Yield Barrels Per Acre)]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Yield Barrels/Acre]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yield Barrels/Acre]' derivation='Sum' name='[sum:Yield Barrels/Acre:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Yield Barrels Per Acre)]' derivation='Year-Trunc' name='[tyr:Year (Yield Barrels Per Acre):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Yield Barrels/Acre:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Yield Barrels Per Acre):qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Yield Barrels/Acre:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Yield Barrels Per Acre):qk]' value='*yy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dcn20d1gbml2g11gml021phb4mt].[sum:Yield Barrels/Acre:qk]</rows>
+        <cols>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Yield Barrels Per Acre):qk]</cols>
+      </table>
+      <simple-id uuid='{00B98EA7-AABD-45AF-83B4-9FF70BBB8513}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Market and Harvest Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#000058' />
+        </style-rule>
+      </style>
+      <size maxheight='1500' maxwidth='1200' minheight='1500' minwidth='1200' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Acres Grown and Harvested+ (Cranberries Nat)' name='federated.1dcn20d1gbml2g11gml021phb4mt' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1dcn20d1gbml2g11gml021phb4mt'>
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98934' id='18' param='horz' type-v2='layout-flow' w='98666' x='667' y='533'>
+            <zone h='98934' id='15' param='vert' type-v2='layout-flow' w='98666' x='667' y='533'>
+              <zone h='2733' id='16' type-v2='title' w='98666' x='667' y='533'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='96201' id='13' type-v2='layout-basic' w='98666' x='667' y='3266'>
+                <zone h='65021' id='9' param='horz' type-v2='layout-flow' w='98666' x='667' y='3266'>
+                  <zone h='65021' id='7' type-v2='layout-basic' w='98666' x='667' y='3266'>
+                    <zone h='30087' id='3' name='Total Yield of Cranberries measured in Barrles/ACRE' w='49324' x='667' y='38200'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='30087' id='5' name='Total Operations with Area Harvested for Cranberries' w='49342' x='49991' y='38200'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='34934' id='6' name='Total Acres of Cranberries Planted and Harvested' w='98666' x='667' y='3266'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='33' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='31180' id='12' name='Annual Utilized Production of Cranberries' w='98666' x='667' y='68287'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='2667' id='10' mode='dropdown' name='Total Acres of Cranberries Planted and Harvested' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]' show-all='false' show-title='false' type-v2='filter' values='all' w='16833' x='81583' y='1067' />
+        <zone h='1800' id='11' leg-item-layout='horz' name='Total Acres of Cranberries Planted and Harvested' pane-specification-id='0' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' show-title='false' type-v2='color' w='40500' x='3500' y='36267' />
+        <zone h='3667' id='19' name='Annual Utilized Production of Cranberries' pane-specification-id='1' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' show-title='false' type-v2='color' w='6833' x='1083' y='97400' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98934' id='20' param='vert' type-v2='layout-flow' w='98666' x='667' y='533'>
+                <zone h='2733' id='16' type-v2='title' w='98666' x='667' y='533'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2667' id='10' mode='dropdown' name='Total Acres of Cranberries Planted and Harvested' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]' show-all='false' show-title='false' type-v2='filter' values='all' w='16833' x='81583' y='1067'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34934' id='6' is-fixed='true' name='Total Acres of Cranberries Planted and Harvested' w='98666' x='667' y='3266'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='1800' id='11' leg-item-layout='horz' name='Total Acres of Cranberries Planted and Harvested' pane-specification-id='0' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' show-title='false' type-v2='color' w='40500' x='3500' y='36267'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30087' id='3' is-fixed='true' name='Total Yield of Cranberries measured in Barrles/ACRE' w='49324' x='667' y='38200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30087' id='5' is-fixed='true' name='Total Operations with Area Harvested for Cranberries' w='49342' x='49991' y='38200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31180' id='12' is-fixed='true' name='Annual Utilized Production of Cranberries' w='98666' x='667' y='68287'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3667' id='19' name='Annual Utilized Production of Cranberries' pane-specification-id='1' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' show-title='false' type-v2='color' w='6833' x='1083' y='97400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D8249F67-D3AC-44CE-87FB-28EA6D0C6EC0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Acres of Cranberries Planted and Harvested'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]' show-all='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:Acres Grown:nk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:Acres Harvested:nk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State:nk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F1E1E4B-4617-414E-8B0E-5BABF218A9E9}' />
+    </window>
+    <window class='worksheet' name='Total Yield of Cranberries measured in Barrles/ACRE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State (Yield Barrels Per Acre):nk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Yield Barrels Per Acre):qk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E283DC7C-85F7-44BB-B9FB-DB73A22CB7D0}' />
+    </window>
+    <window class='worksheet' name='Total Operations with Area Harvested for Cranberries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[none:State (Yield Barrels Per Acre):nk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Operations Harvested):qk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Yield Barrels Per Acre):qk]</field>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41B9C851-857C-4E9A-AA7A-38DE6A2ACA80}' />
+    </window>
+    <window class='worksheet' name='Annual Utilized Production of Cranberries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[tyr:Year (Utilized Prodution):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7573381D-89AB-45E6-96CD-0AF53E8AD825}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Market and Harvest Trends'>
+      <viewpoints>
+        <viewpoint name='Annual Utilized Production of Cranberries'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Acres of Cranberries Planted and Harvested'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1dcn20d1gbml2g11gml021phb4mt].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Operations with Area Harvested for Cranberries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Yield of Cranberries measured in Barrles/ACRE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{246B51FD-3D53-41BA-BB65-2702368F87C9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Annual Utilized Production of Cranberries' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Market and Harvest Trends' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Acres of Cranberries Planted and Harvested' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Operations with Area Harvested for Cranberries' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Yield of Cranberries measured in Barrles/ACRE' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
