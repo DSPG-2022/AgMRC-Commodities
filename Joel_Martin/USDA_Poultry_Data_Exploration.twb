@@ -1,0 +1,2001 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Chickens(By Head)' inline='true' name='federated.1kqmabk0jmtuz712j0ymi05m1scu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Chickens(By Head)' name='textscan.1ac0vqe0oeqt7g12g293409cdolt'>
+            <connection class='textscan' directory='C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Poultry_Data' filename='Poultry(In Heads).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ac0vqe0oeqt7g12g293409cdolt' name='Poultry(In Heads).csv' table='[Poultry(In Heads)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Program' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+            <column datatype='string' name='Period' ordinal='2' />
+            <column datatype='string' name='Week Ending' ordinal='3' />
+            <column datatype='string' name='Geo Level' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='integer' name='State ANSI' ordinal='6' />
+            <column datatype='string' name='Ag District' ordinal='7' />
+            <column datatype='string' name='Ag District Code' ordinal='8' />
+            <column datatype='string' name='County' ordinal='9' />
+            <column datatype='string' name='County ANSI' ordinal='10' />
+            <column datatype='string' name='Zip Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='integer' name='watershed_code' ordinal='13' />
+            <column datatype='string' name='Watershed' ordinal='14' />
+            <column datatype='string' name='Commodity' ordinal='15' />
+            <column datatype='string' name='Data Item' ordinal='16' />
+            <column datatype='string' name='Domain' ordinal='17' />
+            <column datatype='string' name='Domain Category' ordinal='18' />
+            <column datatype='integer' name='Value' ordinal='19' />
+            <column datatype='string' name='CV (%)' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ac0vqe0oeqt7g12g293409cdolt' name='Poultry(In Heads).csv' table='[Poultry(In Heads)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Program' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+            <column datatype='string' name='Period' ordinal='2' />
+            <column datatype='string' name='Week Ending' ordinal='3' />
+            <column datatype='string' name='Geo Level' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='integer' name='State ANSI' ordinal='6' />
+            <column datatype='string' name='Ag District' ordinal='7' />
+            <column datatype='string' name='Ag District Code' ordinal='8' />
+            <column datatype='string' name='County' ordinal='9' />
+            <column datatype='string' name='County ANSI' ordinal='10' />
+            <column datatype='string' name='Zip Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='integer' name='watershed_code' ordinal='13' />
+            <column datatype='string' name='Watershed' ordinal='14' />
+            <column datatype='string' name='Commodity' ordinal='15' />
+            <column datatype='string' name='Data Item' ordinal='16' />
+            <column datatype='string' name='Domain' ordinal='17' />
+            <column datatype='string' name='Domain Category' ordinal='18' />
+            <column datatype='integer' name='Value' ordinal='19' />
+            <column datatype='string' name='CV (%)' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Program</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Program]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Program</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Period</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week Ending</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Week Ending]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Week Ending</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geo Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geo Level]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Geo Level</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ANSI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State ANSI]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>State ANSI</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ag District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ag District]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Ag District</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ag District Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ag District Code]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Ag District Code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County ANSI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County ANSI]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>County ANSI</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Zip Code]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Zip Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>watershed_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[watershed_code]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>watershed_code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Watershed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Watershed]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Watershed</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Commodity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Commodity]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Commodity</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data Item</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Data Item]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Data Item</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Domain]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Domain</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domain Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Domain Category]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Domain Category</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CV (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CV (%)]</local-name>
+            <parent-name>[Poultry(In Heads).csv]</parent-name>
+            <remote-alias>CV (%)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cv (%)' datatype='string' name='[CV (%)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[County ANSI]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Data Item]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, BROILERS' />
+          <alias key='&quot;CHICKENS, LAYERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, LAYERS' />
+          <alias key='&quot;CHICKENS, PULLETS, REPLACEMENT - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, PULLETS' />
+          <alias key='&quot;CHICKENS, ROOSTERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, ROOSTERS' />
+          <alias key='&quot;CHUKARS - SALES, MEASURED IN HEAD&quot;' value='CHUKARS' />
+          <alias key='&quot;DUCKS - SALES, MEASURED IN HEAD&quot;' value='DUCKS' />
+          <alias key='&quot;EMUS - SALES, MEASURED IN HEAD&quot;' value='EMUS' />
+          <alias key='&quot;GEESE - SALES, MEASURED IN HEAD&quot;' value='GEESE' />
+          <alias key='&quot;GUINEAS - SALES, MEASURED IN HEAD&quot;' value='GUINEAS' />
+          <alias key='&quot;OSTRICHES - SALES, MEASURED IN HEAD&quot;' value='OSTRICHES' />
+          <alias key='&quot;PARTRIDGES, HUNGARIAN - SALES, MEASURED IN HEAD&quot;' value='PARTRIDGES' />
+          <alias key='&quot;PEAFOWL, HENS &amp; COCKS - SALES, MEASURED IN HEAD&quot;' value='PEAFOWL' />
+          <alias key='&quot;PHEASANTS - SALES, MEASURED IN HEAD&quot;' value='PHEASANTS' />
+          <alias key='&quot;PIGEONS &amp; SQUAB - SALES, MEASURED IN HEAD&quot;' value='PIGEONS &amp; SQUAB' />
+          <alias key='&quot;QUAIL - SALES, MEASURED IN HEAD&quot;' value='QUAIL' />
+          <alias key='&quot;RHEAS - SALES, MEASURED IN HEAD&quot;' value='RHEAS' />
+          <alias key='&quot;TURKEYS - SALES, MEASURED IN HEAD&quot;' value='TURKEYS' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Poultry(In Heads).csv' datatype='table' name='[__tableau_internal_object_id__].[Poultry(In Heads).csv_D876ADDABCF44196A65352E32ED5EA75]' role='measure' type='quantitative' />
+      <column caption='Watershed Code' datatype='integer' name='[watershed_code]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Poultry(In Heads).csv' id='Poultry(In Heads).csv_D876ADDABCF44196A65352E32ED5EA75'>
+            <properties context=''>
+              <relation connection='textscan.1ac0vqe0oeqt7g12g293409cdolt' name='Poultry(In Heads).csv' table='[Poultry(In Heads)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Program' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='1' />
+                  <column datatype='string' name='Period' ordinal='2' />
+                  <column datatype='string' name='Week Ending' ordinal='3' />
+                  <column datatype='string' name='Geo Level' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='integer' name='State ANSI' ordinal='6' />
+                  <column datatype='string' name='Ag District' ordinal='7' />
+                  <column datatype='string' name='Ag District Code' ordinal='8' />
+                  <column datatype='string' name='County' ordinal='9' />
+                  <column datatype='string' name='County ANSI' ordinal='10' />
+                  <column datatype='string' name='Zip Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='integer' name='watershed_code' ordinal='13' />
+                  <column datatype='string' name='Watershed' ordinal='14' />
+                  <column datatype='string' name='Commodity' ordinal='15' />
+                  <column datatype='string' name='Data Item' ordinal='16' />
+                  <column datatype='string' name='Domain' ordinal='17' />
+                  <column datatype='string' name='Domain Category' ordinal='18' />
+                  <column datatype='integer' name='Value' ordinal='19' />
+                  <column datatype='string' name='CV (%)' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Poultry By State (1)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</run>
+            <run>&gt; Sales (In Heads) in &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</run>
+            <run>&gt; for &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chickens(By Head)' name='federated.1kqmabk0jmtuz712j0ymi05m1scu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kqmabk0jmtuz712j0ymi05m1scu'>
+            <column datatype='string' name='[Data Item]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, BROILERS' />
+                <alias key='&quot;CHICKENS, LAYERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, LAYERS' />
+                <alias key='&quot;CHICKENS, PULLETS, REPLACEMENT - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, PULLETS' />
+                <alias key='&quot;CHICKENS, ROOSTERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, ROOSTERS' />
+                <alias key='&quot;CHUKARS - SALES, MEASURED IN HEAD&quot;' value='CHUKARS' />
+                <alias key='&quot;DUCKS - SALES, MEASURED IN HEAD&quot;' value='DUCKS' />
+                <alias key='&quot;EMUS - SALES, MEASURED IN HEAD&quot;' value='EMUS' />
+                <alias key='&quot;GEESE - SALES, MEASURED IN HEAD&quot;' value='GEESE' />
+                <alias key='&quot;GUINEAS - SALES, MEASURED IN HEAD&quot;' value='GUINEAS' />
+                <alias key='&quot;OSTRICHES - SALES, MEASURED IN HEAD&quot;' value='OSTRICHES' />
+                <alias key='&quot;PARTRIDGES, HUNGARIAN - SALES, MEASURED IN HEAD&quot;' value='PARTRIDGES' />
+                <alias key='&quot;PEAFOWL, HENS &amp; COCKS - SALES, MEASURED IN HEAD&quot;' value='PEAFOWL' />
+                <alias key='&quot;PHEASANTS - SALES, MEASURED IN HEAD&quot;' value='PHEASANTS' />
+                <alias key='&quot;PIGEONS &amp; SQUAB - SALES, MEASURED IN HEAD&quot;' value='PIGEONS &amp; SQUAB' />
+                <alias key='&quot;QUAIL - SALES, MEASURED IN HEAD&quot;' value='QUAIL' />
+                <alias key='&quot;RHEAS - SALES, MEASURED IN HEAD&quot;' value='RHEAS' />
+                <alias key='&quot;TURKEYS - SALES, MEASURED IN HEAD&quot;' value='TURKEYS' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Value]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Data Item]' derivation='None' name='[none:Data Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]'>
+            <groupfilter function='member' level='[none:Data Item:nk]' member='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;ALABAMA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]'>
+            <groupfilter function='level-members' level='[yr:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' scope='rows' value='Total Sales (In Heads)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' value='First Poultry Type'>
+              <formatted-text>
+                <run>First Poultry Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' value='First State'>
+              <formatted-text>
+                <run>First State</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' value='First Year(s)'>
+              <formatted-text>
+                <run>First Year(s)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]</rows>
+        <cols>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</cols>
+      </table>
+      <simple-id uuid='{BEA5D63E-C7A4-43E6-B94F-2E7273B0BF7C}' />
+    </worksheet>
+    <worksheet name='Poultry By State (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</run>
+            <run>&gt; Sales (In Heads) in &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</run>
+            <run>&gt; for &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chickens(By Head)' name='federated.1kqmabk0jmtuz712j0ymi05m1scu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kqmabk0jmtuz712j0ymi05m1scu'>
+            <column datatype='string' name='[Data Item]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, BROILERS' />
+                <alias key='&quot;CHICKENS, LAYERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, LAYERS' />
+                <alias key='&quot;CHICKENS, PULLETS, REPLACEMENT - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, PULLETS' />
+                <alias key='&quot;CHICKENS, ROOSTERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, ROOSTERS' />
+                <alias key='&quot;CHUKARS - SALES, MEASURED IN HEAD&quot;' value='CHUKARS' />
+                <alias key='&quot;DUCKS - SALES, MEASURED IN HEAD&quot;' value='DUCKS' />
+                <alias key='&quot;EMUS - SALES, MEASURED IN HEAD&quot;' value='EMUS' />
+                <alias key='&quot;GEESE - SALES, MEASURED IN HEAD&quot;' value='GEESE' />
+                <alias key='&quot;GUINEAS - SALES, MEASURED IN HEAD&quot;' value='GUINEAS' />
+                <alias key='&quot;OSTRICHES - SALES, MEASURED IN HEAD&quot;' value='OSTRICHES' />
+                <alias key='&quot;PARTRIDGES, HUNGARIAN - SALES, MEASURED IN HEAD&quot;' value='PARTRIDGES' />
+                <alias key='&quot;PEAFOWL, HENS &amp; COCKS - SALES, MEASURED IN HEAD&quot;' value='PEAFOWL' />
+                <alias key='&quot;PHEASANTS - SALES, MEASURED IN HEAD&quot;' value='PHEASANTS' />
+                <alias key='&quot;PIGEONS &amp; SQUAB - SALES, MEASURED IN HEAD&quot;' value='PIGEONS &amp; SQUAB' />
+                <alias key='&quot;QUAIL - SALES, MEASURED IN HEAD&quot;' value='QUAIL' />
+                <alias key='&quot;RHEAS - SALES, MEASURED IN HEAD&quot;' value='RHEAS' />
+                <alias key='&quot;TURKEYS - SALES, MEASURED IN HEAD&quot;' value='TURKEYS' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Value]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Data Item]' derivation='None' name='[none:Data Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]'>
+            <groupfilter function='member' level='[none:Data Item:nk]' member='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;ALABAMA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]'>
+            <groupfilter function='level-members' level='[yr:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' scope='rows' value='Total Sales (In Heads)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' value='Second Poultry Type'>
+              <formatted-text>
+                <run>Second Poultry Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' value='Second State'>
+              <formatted-text>
+                <run>Second State</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' value='Second Year(s)'>
+              <formatted-text>
+                <run>Second Year(s)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]</rows>
+        <cols>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</cols>
+      </table>
+      <simple-id uuid='{B040920B-A468-4AA8-B012-D9A6E66F523C}' />
+    </worksheet>
+    <worksheet name='Poultry by State and Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</run>
+            <run>&gt; by &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</run>
+            <run>&gt; and &lt;</run>
+            <run>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chickens(By Head)' name='federated.1kqmabk0jmtuz712j0ymi05m1scu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1kqmabk0jmtuz712j0ymi05m1scu'>
+            <column datatype='string' name='[Data Item]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, BROILERS' />
+                <alias key='&quot;CHICKENS, LAYERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, LAYERS' />
+                <alias key='&quot;CHICKENS, PULLETS, REPLACEMENT - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, PULLETS' />
+                <alias key='&quot;CHICKENS, ROOSTERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, ROOSTERS' />
+                <alias key='&quot;CHUKARS - SALES, MEASURED IN HEAD&quot;' value='CHUKARS' />
+                <alias key='&quot;DUCKS - SALES, MEASURED IN HEAD&quot;' value='DUCKS' />
+                <alias key='&quot;EMUS - SALES, MEASURED IN HEAD&quot;' value='EMUS' />
+                <alias key='&quot;GEESE - SALES, MEASURED IN HEAD&quot;' value='GEESE' />
+                <alias key='&quot;GUINEAS - SALES, MEASURED IN HEAD&quot;' value='GUINEAS' />
+                <alias key='&quot;OSTRICHES - SALES, MEASURED IN HEAD&quot;' value='OSTRICHES' />
+                <alias key='&quot;PARTRIDGES, HUNGARIAN - SALES, MEASURED IN HEAD&quot;' value='PARTRIDGES' />
+                <alias key='&quot;PEAFOWL, HENS &amp; COCKS - SALES, MEASURED IN HEAD&quot;' value='PEAFOWL' />
+                <alias key='&quot;PHEASANTS - SALES, MEASURED IN HEAD&quot;' value='PHEASANTS' />
+                <alias key='&quot;PIGEONS &amp; SQUAB - SALES, MEASURED IN HEAD&quot;' value='PIGEONS &amp; SQUAB' />
+                <alias key='&quot;QUAIL - SALES, MEASURED IN HEAD&quot;' value='QUAIL' />
+                <alias key='&quot;RHEAS - SALES, MEASURED IN HEAD&quot;' value='RHEAS' />
+                <alias key='&quot;TURKEYS - SALES, MEASURED IN HEAD&quot;' value='TURKEYS' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Value]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Data Item]' derivation='None' name='[none:Data Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]'>
+            <groupfilter function='level-members' level='[none:Data Item:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]'>
+            <groupfilter function='level-members' level='[yr:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</column>
+            <column>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[Longitude (generated)]' field-type='quantitative' max='45866272.09041854' min='9848275.288862953' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[Latitude (generated)]' field-type='quantitative' max='11941028.595949907' min='1310166.136961868' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' value='Total Sales in Heads'>
+              <formatted-text>
+                <run>Total Sales in Heads</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' value='Year'>
+              <formatted-text>
+                <run>Year</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' value='Poultry Type'>
+              <formatted-text>
+                <run>Poultry Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' />
+              <lod column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' />
+              <geometry column='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[Latitude (generated)]</rows>
+        <cols>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C7BD9049-1F00-4E7E-B47E-57B143D094D3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Poultry Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='24'>&lt;Sheet Name&gt; Exploration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f9f3ef' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#4e79a7' />
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#4e79a7' />
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Chickens(By Head)' name='federated.1kqmabk0jmtuz712j0ymi05m1scu' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kqmabk0jmtuz712j0ymi05m1scu'>
+        <column datatype='string' name='[Data Item]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;CHICKENS, BROILERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, BROILERS' />
+            <alias key='&quot;CHICKENS, LAYERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, LAYERS' />
+            <alias key='&quot;CHICKENS, PULLETS, REPLACEMENT - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, PULLETS' />
+            <alias key='&quot;CHICKENS, ROOSTERS - SALES, MEASURED IN HEAD&quot;' value='CHICKENS, ROOSTERS' />
+            <alias key='&quot;CHUKARS - SALES, MEASURED IN HEAD&quot;' value='CHUKARS' />
+            <alias key='&quot;DUCKS - SALES, MEASURED IN HEAD&quot;' value='DUCKS' />
+            <alias key='&quot;EMUS - SALES, MEASURED IN HEAD&quot;' value='EMUS' />
+            <alias key='&quot;GEESE - SALES, MEASURED IN HEAD&quot;' value='GEESE' />
+            <alias key='&quot;GUINEAS - SALES, MEASURED IN HEAD&quot;' value='GUINEAS' />
+            <alias key='&quot;OSTRICHES - SALES, MEASURED IN HEAD&quot;' value='OSTRICHES' />
+            <alias key='&quot;PARTRIDGES, HUNGARIAN - SALES, MEASURED IN HEAD&quot;' value='PARTRIDGES' />
+            <alias key='&quot;PEAFOWL, HENS &amp; COCKS - SALES, MEASURED IN HEAD&quot;' value='PEAFOWL' />
+            <alias key='&quot;PHEASANTS - SALES, MEASURED IN HEAD&quot;' value='PHEASANTS' />
+            <alias key='&quot;PIGEONS &amp; SQUAB - SALES, MEASURED IN HEAD&quot;' value='PIGEONS &amp; SQUAB' />
+            <alias key='&quot;QUAIL - SALES, MEASURED IN HEAD&quot;' value='QUAIL' />
+            <alias key='&quot;RHEAS - SALES, MEASURED IN HEAD&quot;' value='RHEAS' />
+            <alias key='&quot;TURKEYS - SALES, MEASURED IN HEAD&quot;' value='TURKEYS' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Data Item]' derivation='None' name='[none:Data Item:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='20' param='vert' type-v2='layout-flow' w='99050' x='475' y='893'>
+            <zone h='5915' id='21' type-v2='title' w='99050' x='475' y='893'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='74' forceUpdate='true' h='9152' id='22' is-fixed='true' type-v2='text' w='99050' x='475' y='6808'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Poultry Sales Across the United States</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='83147' id='18' type-v2='layout-basic' w='99050' x='475' y='15960'>
+              <zone h='43158' id='7' param='horz' type-v2='layout-flow' w='99050' x='475' y='15960'>
+                <zone h='43158' id='5' type-v2='layout-basic' w='80404' x='475' y='15960'>
+                  <zone h='43158' id='3' name='Poultry by State and Year' w='67945' x='475' y='15960'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='43158' id='8' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' type-v2='filter' w='12459' x='68420' y='15960'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='314' h='43158' id='6' is-fixed='true' param='horz' type-v2='layout-flow' w='18646' x='80879' y='15960'>
+                  <zone h='43158' id='10' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9323' x='80879' y='15960'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='43158' id='9' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' w='9323' x='90202' y='15960'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='32127' id='12' name='Poultry By State (1)' w='40024' x='475' y='66980'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32127' id='15' name='Poultry By State (2)' w='40024' x='50000' y='66980'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5879' id='16' mode='dropdown' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' show-all='false' type-v2='filter' values='relevant' w='9501' x='90024' y='66980'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6300' id='13' mode='dropdown' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' show-all='false' type-v2='filter' values='relevant' w='9501' x='40499' y='66980'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='7862' id='23' type-v2='text' w='99050' x='475' y='59118'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Poultry Sales Comparator</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5983' id='14' mode='dropdown' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9501' x='40499' y='73280'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6090' id='17' mode='dropdown' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9501' x='90024' y='72859'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19844' id='24' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' values='database' w='9501' x='40499' y='79263'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='20158' id='25' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' values='database' w='9501' x='90024' y='78949'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8482' id='11' name='Poultry by State and Year' pane-specification-id='0' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' type-v2='color' w='8492' x='58729' y='21987' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontsize='24'>&lt;Sheet Name&gt; Exploration</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='26' param='vert' type-v2='layout-flow' w='99050' x='475' y='893'>
+                <zone h='5915' id='21' type-v2='title' w='99050' x='475' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='74' forceUpdate='true' h='9152' id='22' type-v2='text' w='99050' x='475' y='6808'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Poultry Sales Across the United States</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='43158' id='8' mode='checkdropdown' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' type-v2='filter' w='12459' x='68420' y='15960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='43158' id='10' mode='checkdropdown' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9323' x='80879' y='15960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='43158' id='9' mode='checkdropdown' name='Poultry by State and Year' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' w='9323' x='90202' y='15960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43158' id='3' is-fixed='true' name='Poultry by State and Year' w='67945' x='475' y='15960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8482' id='11' name='Poultry by State and Year' pane-specification-id='0' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' type-v2='color' w='8492' x='58729' y='21987'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7862' id='23' type-v2='text' w='99050' x='475' y='59118'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Poultry Sales Comparator</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6300' id='13' mode='dropdown' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' show-all='false' type-v2='filter' values='relevant' w='9501' x='40499' y='66980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5983' id='14' mode='dropdown' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9501' x='40499' y='73280'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19844' id='24' mode='checkdropdown' name='Poultry By State (1)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' values='database' w='9501' x='40499' y='79263'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='32127' id='12' is-fixed='true' name='Poultry By State (1)' w='40024' x='475' y='66980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5879' id='16' mode='dropdown' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' show-all='false' type-v2='filter' values='relevant' w='9501' x='90024' y='66980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6090' id='17' mode='dropdown' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type-v2='filter' w='9501' x='90024' y='72859'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20158' id='25' mode='checkdropdown' name='Poultry By State (2)' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type-v2='filter' values='database' w='9501' x='90024' y='78949'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='32127' id='15' is-fixed='true' name='Poultry By State (2)' w='40024' x='50000' y='66980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9784251F-D00B-40AA-986B-BDBA0BC82FEC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Poultry By State (1)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' show-all='false' type='filter' values='relevant' />
+            <card mode='dropdown' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Value:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5EE3314E-2361-4153-8F43-85304A482F0E}' />
+    </window>
+    <window class='worksheet' name='Poultry By State (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Value:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF3B0170-6A03-45D1-973B-CC397DE7AFA7}' />
+    </window>
+    <window class='worksheet' name='Poultry by State and Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]' type='filter' />
+            <card param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]' type='filter' />
+            <card param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1kqmabk0jmtuz712j0ymi05m1scu].[sum:Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:Data Item:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[none:State:nk]</field>
+            <field>[federated.1kqmabk0jmtuz712j0ymi05m1scu].[yr:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0B915572-C02D-4DC2-922B-ABE2F8619D47}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Poultry Sales'>
+      <viewpoints>
+        <viewpoint name='Poultry By State (1)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Poultry By State (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Poultry by State and Year'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{A846DFA2-51A6-4877-943A-617D1DA38DB9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Poultry By State (1)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Poultry By State (2)' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Poultry Sales' width='192'>
+      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
+      Jvz/pkaAjrZ4Xg8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Poultry by State and Year' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
