@@ -59,6 +59,27 @@ x  = esri_cleaned$countyName
 x  =  removeWords(x,stopword)
 esri_cleaned$countyName <- x
 
+# add 0 to start of 4 digit fips since they have been dropped
+countyFIPS <- vector(length = dim(esri_cleaned)[1])
+
+index <- 0
+
+## !! Caution !! May take awhile to run !!
+for(x in esri_cleaned$countyFIPS){
+  index <- index + 1
+  if(nchar(x) == 4){
+    countyFIPS[index] <- paste0("0",x)
+  }
+  else {
+    countyFIPS[index] <- x
+  }
+}
+
+esri_cleaned$countyFIPS <- countyFIPS
+
+# save wide format to file
+write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv", row.names = FALSE)
+
 # change form to long
 esri_cleaned <- esri_cleaned %>%
   pivot_longer(
@@ -77,22 +98,5 @@ esri_cleaned <- esri_cleaned %>%
 # make countyFIPS a char column
 esri_cleaned$countyFIPS <-as.character(esri_cleaned$countyFIPS)
 
-# add 0 to start of 4 digit fips since they have been dropped
-countyFIPS <- vector(length = dim(esri_cleaned)[1])
-
-index <- 0
-
-## !! Caution !! May take awhile to run !!
-  for(x in esri_cleaned$countyFIPS){
-    index <- index + 1
-    if(nchar(x) == 4){
-      countyFIPS[index] <- paste0("0",x)
-    }
-    else {
-      countyFIPS[index] <- x
-    }
-  }
-
-esri_cleaned$countyFIPS <- countyFIPS
-
+# write long format to file
 write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv", row.names = FALSE)
