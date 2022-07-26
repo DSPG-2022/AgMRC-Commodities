@@ -36,547 +36,6 @@
         <range max='100000.0' min='0.0' />
       </column>
     </datasource>
-    <datasource caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long' inline='true' name='federated.1h0a3d60bl8gy21da9ucd067vs0o' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long' name='textscan.173sekf1asmrgg1gce1f008c9iy1'>
-            <connection class='textscan' directory='C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Datasets' filename='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' password='' server='' workgroup-auth-mode='as-is' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='countyFIPS' ordinal='0' />
-            <column datatype='integer' name='stateFIPS' ordinal='1' />
-            <column datatype='string' name='countyName' ordinal='2' />
-            <column datatype='string' name='stateName' ordinal='3' />
-            <column datatype='real' name='dollars' ordinal='4' />
-            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
-            <column datatype='string' name='category' ordinal='6' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='countyFIPS' ordinal='0' />
-            <column datatype='integer' name='stateFIPS' ordinal='1' />
-            <column datatype='string' name='countyName' ordinal='2' />
-            <column datatype='string' name='stateName' ordinal='3' />
-            <column datatype='real' name='dollars' ordinal='4' />
-            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
-            <column datatype='string' name='category' ordinal='6' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <refresh increment-key='' incremental-updates='false' />
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>countyFIPS</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[countyFIPS]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>countyFIPS</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>stateFIPS</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[stateFIPS]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>stateFIPS</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>countyName</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[countyName]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>countyName</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>stateName</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[stateName]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>stateName</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>dollars</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[dollars]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>dollars</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>year</remote-name>
-            <remote-type>7</remote-type>
-            <local-name>[year]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>year</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>date</local-type>
-            <aggregation>Year</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>category</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[category]</local-name>
-            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
-            <remote-alias>category</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Calculation_735494171883794438:qk]&quot;' value='National' />
-          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:dollars:qk]&quot;' value='State' />
-          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcdf:avg:dollars:qk]&quot;' value='Percentage Difference in Avg. Dollars from the Previous Year' />
-        </aliases>
-      </column>
-      <column caption='National Average Yearly Egg' datatype='real' name='[Calculation_735494171883794438]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='{FIXED [category],([year]) : AVG([dollars])}' />
-      </column>
-      <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
-        <calculation class='categorical-bin' column='[category]' new-bin='true'>
-          <bin default-name='true' value='&quot;Food_at_Home_Average &amp; Food_Away_from_Home_Average&quot;'>
-            <value>&quot;Food_at_Home_Average&quot;</value>
-            <value>&quot;Food_Away_from_Home_Average&quot;</value>
-          </bin>
-        </calculation>
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' datatype='table' name='[__tableau_internal_object_id__].[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]' role='measure' type='quantitative' />
-      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;Food_at_Home_Average&quot;' value='Food at Home' />
-          <alias key='&quot;Food_Away_from_Home_Average&quot;' value='Food Away from Home' />
-        </aliases>
-      </column>
-      <column caption='County FIPS' datatype='integer' name='[countyFIPS]' role='measure' type='quantitative' />
-      <column caption='County Name' datatype='string' name='[countyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
-      <column caption='Dollars' datatype='real' name='[dollars]' role='measure' type='quantitative' />
-      <column caption='State FIPS' datatype='integer' name='[stateFIPS]' role='measure' type='quantitative' />
-      <column caption='State Name' datatype='string' name='[stateName]' role='dimension' type='nominal' />
-      <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
-      <column-instance column='[Calculation_735494171883794438]' derivation='Avg' name='[avg:Calculation_735494171883794438:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[dollars]' derivation='Avg' name='[avg:dollars:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
-      <column-instance column='[dollars]' derivation='Avg' name='[pcdf:avg:dollars:qk]' pivot='key' type='quantitative'>
-        <table-calc diff-options='Relative' level-address='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[yr:year:ok]' ordering-field='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[year]' ordering-type='Field' type='PctDiff'>
-          <address>
-            <value>-1</value>
-          </address>
-        </table-calc>
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Avg' name='[pcto:avg:dollars:qk]' pivot='key' type='quantitative'>
-        <table-calc ordering-type='Columns' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:2]' pivot='key' type='quantitative'>
-        <table-calc ordering-type='Columns' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:4]' pivot='key' type='quantitative'>
-        <table-calc ordering-type='Table' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:5]' pivot='key' type='quantitative'>
-        <table-calc ordering-type='CellInPane' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:6]' pivot='key' type='quantitative'>
-        <table-calc ordering-field='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[category]' ordering-type='Field' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk]' pivot='key' type='quantitative'>
-        <table-calc ordering-type='Rows' type='PctTotal' />
-      </column-instance>
-      <column-instance column='[dollars]' derivation='Sum' name='[sum:dollars:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
-      <group caption='Tooltip (Category (group))' hidden='true' name='[Tooltip (Category (group))]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Category (group)]' />
-        </groupfilter>
-      </group>
-      <group caption='Tooltip (Category (group),Category)' hidden='true' name='[Tooltip (Category (group),Category)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[Category (group)]' />
-          <groupfilter function='level-members' level='[category]' />
-        </groupfilter>
-      </group>
-      <group caption='Tooltip (Category)' hidden='true' name='[Tooltip (Category)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
-        <groupfilter function='crossjoin'>
-          <groupfilter function='level-members' level='[category]' />
-        </groupfilter>
-      </group>
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/joelm/Documents/My Tableau Repository/Datasources/esri_food_prefs_2000_2010_2021_2026_cleaned_long.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2022 03:26:11 PM' username='tableau_internal_user'>
-          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='esri_food_prefs_2000_2010_2021_2026_cleaned_long' increment-value='%null%' refresh-type='create' rows-inserted='254692' timestamp-start='2022-07-26 15:26:10.732' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>countyFIPS</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[countyFIPS]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>countyFIPS</remote-alias>
-              <ordinal>0</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>18931</approx-count>
-              <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>stateFIPS</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[stateFIPS]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>stateFIPS</remote-alias>
-              <ordinal>1</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>71</approx-count>
-              <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>countyName</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[countyName]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>countyName</remote-alias>
-              <ordinal>2</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>8672</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RUS' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>stateName</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[stateName]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>stateName</remote-alias>
-              <ordinal>3</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>71</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RUS' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>dollars</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[dollars]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>dollars</remote-alias>
-              <ordinal>4</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>136048</approx-count>
-              <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>year</remote-name>
-              <remote-type>133</remote-type>
-              <local-name>[year]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>year</remote-alias>
-              <ordinal>5</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>date</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>4</approx-count>
-              <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>category</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[category]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>category</remote-alias>
-              <ordinal>6</ordinal>
-              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RUS' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[Category (group)]' type='palette'>
-            <map to='#499894'>
-              <bucket>&quot;Eggs_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Alcoholic_Beverages_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Food_at_Home_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Food_at_Home_Average &amp; Food_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Seafood_Average&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Bread_Average&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Flour_Average&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Breakfast_and_Brunch_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Poultry_Average&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Annual_Budget_Expenditures_Average&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Pasta_Cornmeal_Other_Cereal_Products_Average&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Dairy_Products_Average&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;Fruit_Vegetables_Average&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;Lunch_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot;Pork_Average&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot;Rice_Average&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Dinner_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Bakery_Cereal_Products_Average&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Food_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;Meat_Poultry_Fish_Eggs_Average&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Food_Average&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Beef_Average&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[:Measure Names]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:avg:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:2]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:4]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:5]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:6]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[sum:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;[federated.0e4vtqr1i74nlw1dxinne006toy5].[avg:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Dollars (copy)_735494171877191684:qk]&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;[Parameters].[Parameter 3]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Calculation_735494171883794438:qk]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcdf:avg:dollars:qk]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[Parameters].[National Avg Home Food Expenditures 2000 (copy)_1851542452754866183]&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:category:nk]' type='palette'>
-            <map to='#2a5783'>
-              <bucket>&quot;Food_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Eggs_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Alcoholic_Beverages_Average&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Seafood_Average&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Bread_Average&quot;</bucket>
-            </map>
-            <map to='#6394be'>
-              <bucket>&quot;Food_at_Home_Average&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Flour_Average&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Breakfast_and_Brunch_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Poultry_Average&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Annual_Budget_Expenditures_Average&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Pasta_Cornmeal_Other_Cereal_Products_Average&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Dairy_Products_Average&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;Fruit_Vegetables_Average&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;Lunch_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot;Pork_Average&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot;Rice_Average&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Dinner_Away_from_Home_Average&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Bakery_Cereal_Products_Average&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;Meat_Poultry_Fish_Eggs_Average&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Food_Average&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Beef_Average&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' id='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C'>
-            <properties context=''>
-              <relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='integer' name='countyFIPS' ordinal='0' />
-                  <column datatype='integer' name='stateFIPS' ordinal='1' />
-                  <column datatype='string' name='countyName' ordinal='2' />
-                  <column datatype='string' name='stateName' ordinal='3' />
-                  <column datatype='real' name='dollars' ordinal='4' />
-                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
-                  <column datatype='string' name='category' ordinal='6' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='nces_k12_schooldirectory+ (DataScience401)' inline='true' name='federated.0p184gj1n74d5q11t4p6r1oczvnw' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -10529,17 +9988,561 @@
         </relationships>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long' inline='true' name='federated.1h0a3d60bl8gy21da9ucd067vs0o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long' name='textscan.173sekf1asmrgg1gce1f008c9iy1'>
+            <connection class='textscan' directory='C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Datasets' filename='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='countyFIPS' ordinal='0' />
+            <column datatype='integer' name='stateFIPS' ordinal='1' />
+            <column datatype='string' name='countyName' ordinal='2' />
+            <column datatype='string' name='stateName' ordinal='3' />
+            <column datatype='real' name='dollars' ordinal='4' />
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
+            <column datatype='string' name='category' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='countyFIPS' ordinal='0' />
+            <column datatype='integer' name='stateFIPS' ordinal='1' />
+            <column datatype='string' name='countyName' ordinal='2' />
+            <column datatype='string' name='stateName' ordinal='3' />
+            <column datatype='real' name='dollars' ordinal='4' />
+            <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
+            <column datatype='string' name='category' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>countyFIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[countyFIPS]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>countyFIPS</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stateFIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stateFIPS]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>stateFIPS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>countyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[countyName]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>countyName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stateName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stateName]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>stateName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dollars</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dollars]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>dollars</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Calculation_735494171883794438:qk]&quot;' value='National' />
+          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:dollars:qk]&quot;' value='State' />
+          <alias key='&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcdf:avg:dollars:qk]&quot;' value='Percentage Difference in Avg. Dollars from the Previous Year' />
+        </aliases>
+      </column>
+      <column caption='National Average Yearly Egg' datatype='real' name='[Calculation_735494171883794438]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [category],([year]) : AVG([dollars])}' />
+      </column>
+      <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[category]' new-bin='true'>
+          <bin default-name='true' value='&quot;Food_at_Home_Average &amp; Food_Away_from_Home_Average&quot;'>
+            <value>&quot;Food_at_Home_Average&quot;</value>
+            <value>&quot;Food_Away_from_Home_Average&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' datatype='table' name='[__tableau_internal_object_id__].[esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Food_at_Home_Average&quot;' value='Food at Home' />
+          <alias key='&quot;Food_Away_from_Home_Average&quot;' value='Food Away from Home' />
+        </aliases>
+      </column>
+      <column caption='County FIPS' datatype='integer' name='[countyFIPS]' role='measure' type='quantitative' />
+      <column caption='County Name' datatype='string' name='[countyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Dollars' datatype='real' name='[dollars]' role='measure' type='quantitative' />
+      <column caption='State FIPS' datatype='integer' name='[stateFIPS]' role='measure' type='quantitative' />
+      <column caption='State Name' datatype='string' name='[stateName]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Calculation_735494171883794438]' derivation='Avg' name='[avg:Calculation_735494171883794438:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[dollars]' derivation='Avg' name='[avg:dollars:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[dollars]' derivation='Avg' name='[pcdf:avg:dollars:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' level-address='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[yr:year:ok]' ordering-field='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[year]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Avg' name='[pcto:avg:dollars:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.1h0a3d60bl8gy21da9ucd067vs0o].[category]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[pcto:sum:dollars:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[dollars]' derivation='Sum' name='[sum:dollars:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+      <group caption='Tooltip (Category (group))' hidden='true' name='[Tooltip (Category (group))]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Category (group)]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Category (group),Category)' hidden='true' name='[Tooltip (Category (group),Category)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Category (group)]' />
+          <groupfilter function='level-members' level='[category]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Category)' hidden='true' name='[Tooltip (Category)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/joelm/Documents/My Tableau Repository/Datasources/esri_food_prefs_2000_2010_2021_2026_cleaned_long.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2022 03:26:11 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='esri_food_prefs_2000_2010_2021_2026_cleaned_long' increment-value='%null%' refresh-type='create' rows-inserted='254692' timestamp-start='2022-07-26 15:26:10.732' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>countyFIPS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[countyFIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>countyFIPS</remote-alias>
+              <ordinal>0</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18931</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stateFIPS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stateFIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stateFIPS</remote-alias>
+              <ordinal>1</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>countyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[countyName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>countyName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8672</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stateName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stateName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stateName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dollars</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dollars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dollars</remote-alias>
+              <ordinal>4</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>136048</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>6</ordinal>
+              <family>esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Category (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Eggs_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alcoholic_Beverages_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Food_at_Home_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Food_at_Home_Average &amp; Food_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Seafood_Average&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bread_Average&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Flour_Average&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Breakfast_and_Brunch_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Poultry_Average&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Annual_Budget_Expenditures_Average&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pasta_Cornmeal_Other_Cereal_Products_Average&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dairy_Products_Average&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fruit_Vegetables_Average&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lunch_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pork_Average&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rice_Average&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dinner_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bakery_Cereal_Products_Average&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Food_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Meat_Poultry_Fish_Eggs_Average&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Food_Average&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Beef_Average&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:avg:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcto:sum:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[sum:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0e4vtqr1i74nlw1dxinne006toy5].[avg:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Dollars (copy)_735494171877191684:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[Parameters].[Parameter 3]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[avg:Calculation_735494171883794438:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1h0a3d60bl8gy21da9ucd067vs0o].[pcdf:avg:dollars:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Parameters].[National Avg Home Food Expenditures 2000 (copy)_1851542452754866183]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Food_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Eggs_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alcoholic_Beverages_Average&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Seafood_Average&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bread_Average&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;Food_at_Home_Average&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Flour_Average&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Breakfast_and_Brunch_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Poultry_Average&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Annual_Budget_Expenditures_Average&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pasta_Cornmeal_Other_Cereal_Products_Average&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dairy_Products_Average&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fruit_Vegetables_Average&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lunch_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pork_Average&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rice_Average&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dinner_Away_from_Home_Average&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bakery_Cereal_Products_Average&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Meat_Poultry_Fish_Eggs_Average&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Food_Average&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Beef_Average&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' id='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv_7E07F773708E427C9463BE0FF4D2368C'>
+            <properties context=''>
+              <relation connection='textscan.173sekf1asmrgg1gce1f008c9iy1' name='esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_long#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='countyFIPS' ordinal='0' />
+                  <column datatype='integer' name='stateFIPS' ordinal='1' />
+                  <column datatype='string' name='countyName' ordinal='2' />
+                  <column datatype='string' name='stateName' ordinal='3' />
+                  <column datatype='real' name='dollars' ordinal='4' />
+                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='5' />
+                  <column datatype='string' name='category' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='esri_food_prefs_2000_2010_2021_2026_cleaned_wide' inline='true' name='federated.1vwsru417pgwyj0zquj060lwofxj' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='esri_food_prefs_2000_2010_2021_2026_cleaned_wide' name='textscan.1ldew011gn3k1914xqzm90acc112'>
             <connection class='textscan' directory='C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Datasets' filename='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
-          <named-connection caption='isueoip1mdb.cxpaoq5bnjvw.us-east-1.rds.amazonaws.com' name='mariadb.02znkio10ol89v16s2nz60yqor8s'>
-            <connection class='mariadb' dbname='DataScience401' one-time-sql='' port='3306' server='isueoip1mdb.cxpaoq5bnjvw.us-east-1.rds.amazonaws.com' source-charset='' username='DataScience401' workgroup-auth-mode='as-is' />
-          </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mariadb.02znkio10ol89v16s2nz60yqor8s' name='cdc_state_indicator_report_fruit_veg' table='[cdc_state_indicator_report_fruit_veg]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ldew011gn3k1914xqzm90acc112' name='cdc_state_indicator_report_fruit_veg.csv' table='[cdc_state_indicator_report_fruit_veg#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Local Food Policy Councils' ordinal='0' />
+            <column datatype='string' name='State (Cdc State Indicator Report Fruit Veg)' ordinal='1' />
+            <column datatype='string' name='State Food Policy Council' ordinal='2' />
+            <column datatype='integer' name='stateFIPS (cdc state indicator report fruit veg)' ordinal='3' />
+            <column datatype='string' name='stateName (cdc state indicator report fruit veg)' ordinal='4' />
+            <column datatype='real' name='Farmers Markets Accepting WIC' ordinal='5' />
+            <column datatype='real' name='farmersMarketsPer100000' ordinal='6' />
+            <column datatype='integer' name='Food Hubs' ordinal='7' />
+            <column datatype='real' name='School Salad Bars' ordinal='8' />
+            <column datatype='real' name='Schools With Farm To School Program' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
           <relation connection='textscan.1ldew011gn3k1914xqzm90acc112' name='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv' table='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide#csv]' type='table'>
             <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
@@ -10631,112 +10634,42 @@
               <column datatype='real' name='2026_Food_at_Home_Average' ordinal='85' />
             </columns>
           </relation>
-          <relation connection='mariadb.02znkio10ol89v16s2nz60yqor8s' name='cdc_state_indicator_report_fruit_veg' table='[cdc_state_indicator_report_fruit_veg]' type='table' />
+          <relation connection='textscan.1ldew011gn3k1914xqzm90acc112' name='cdc_state_indicator_report_fruit_veg.csv' table='[cdc_state_indicator_report_fruit_veg#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Local Food Policy Councils' ordinal='0' />
+              <column datatype='string' name='State (Cdc State Indicator Report Fruit Veg)' ordinal='1' />
+              <column datatype='string' name='State Food Policy Council' ordinal='2' />
+              <column datatype='integer' name='stateFIPS (cdc state indicator report fruit veg)' ordinal='3' />
+              <column datatype='string' name='stateName (cdc state indicator report fruit veg)' ordinal='4' />
+              <column datatype='real' name='Farmers Markets Accepting WIC' ordinal='5' />
+              <column datatype='real' name='farmersMarketsPer100000' ordinal='6' />
+              <column datatype='integer' name='Food Hubs' ordinal='7' />
+              <column datatype='real' name='School Salad Bars' ordinal='8' />
+              <column datatype='real' name='Schools With Farm To School Program' ordinal='9' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <cols>
-          <map key='[2000_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Alcoholic_Beverages_Average]' />
-          <map key='[2000_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Bakery_Cereal_Products_Average]' />
-          <map key='[2000_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Beef_Average]' />
-          <map key='[2000_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Bread_Average]' />
-          <map key='[2000_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Breakfast_and_Brunch_Away_from_Home_Average]' />
-          <map key='[2000_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Dairy_Products_Average]' />
-          <map key='[2000_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Dinner_Away_from_Home_Average]' />
-          <map key='[2000_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Eggs_Average]' />
-          <map key='[2000_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Flour_Average]' />
-          <map key='[2000_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Food_Average]' />
-          <map key='[2000_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Food_Away_from_Home_Average]' />
-          <map key='[2000_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Food_at_Home_Average]' />
-          <map key='[2000_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Fruit_Vegetables_Average]' />
-          <map key='[2000_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Lunch_Away_from_Home_Average]' />
-          <map key='[2000_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Meat_Poultry_Fish_Eggs_Average]' />
-          <map key='[2000_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-          <map key='[2000_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Pork_Average]' />
-          <map key='[2000_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Poultry_Average]' />
-          <map key='[2000_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Rice_Average]' />
-          <map key='[2000_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2000_Seafood_Average]' />
-          <map key='[2010_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Alcoholic_Beverages_Average]' />
-          <map key='[2010_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Bakery_Cereal_Products_Average]' />
-          <map key='[2010_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Beef_Average]' />
-          <map key='[2010_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Bread_Average]' />
-          <map key='[2010_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Breakfast_and_Brunch_Away_from_Home_Average]' />
-          <map key='[2010_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Dairy_Products_Average]' />
-          <map key='[2010_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Dinner_Away_from_Home_Average]' />
-          <map key='[2010_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Eggs_Average]' />
-          <map key='[2010_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Flour_Average]' />
-          <map key='[2010_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Food_Average]' />
-          <map key='[2010_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Food_Away_from_Home_Average]' />
-          <map key='[2010_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Food_at_Home_Average]' />
-          <map key='[2010_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Fruit_Vegetables_Average]' />
-          <map key='[2010_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Lunch_Away_from_Home_Average]' />
-          <map key='[2010_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Meat_Poultry_Fish_Eggs_Average]' />
-          <map key='[2010_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-          <map key='[2010_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Pork_Average]' />
-          <map key='[2010_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Poultry_Average]' />
-          <map key='[2010_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Rice_Average]' />
-          <map key='[2010_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2010_Seafood_Average]' />
-          <map key='[2021_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Alcoholic_Beverages_Average]' />
-          <map key='[2021_Annual_Budget_Expenditures_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Annual_Budget_Expenditures_Average]' />
-          <map key='[2021_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Bakery_Cereal_Products_Average]' />
-          <map key='[2021_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Beef_Average]' />
-          <map key='[2021_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Bread_Average]' />
-          <map key='[2021_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Breakfast_and_Brunch_Away_from_Home_Average]' />
-          <map key='[2021_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Dairy_Products_Average]' />
-          <map key='[2021_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Dinner_Away_from_Home_Average]' />
-          <map key='[2021_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Eggs_Average]' />
-          <map key='[2021_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Flour_Average]' />
-          <map key='[2021_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Food_Average]' />
-          <map key='[2021_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Food_Away_from_Home_Average]' />
-          <map key='[2021_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Food_at_Home_Average]' />
-          <map key='[2021_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Fruit_Vegetables_Average]' />
-          <map key='[2021_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Lunch_Away_from_Home_Average]' />
-          <map key='[2021_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Meat_Poultry_Fish_Eggs_Average]' />
-          <map key='[2021_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-          <map key='[2021_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Pork_Average]' />
-          <map key='[2021_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Poultry_Average]' />
-          <map key='[2021_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Rice_Average]' />
-          <map key='[2021_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2021_Seafood_Average]' />
-          <map key='[2026_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Alcoholic_Beverages_Average]' />
-          <map key='[2026_Annual_Budget_Expenditures_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Annual_Budget_Expenditures_Average]' />
-          <map key='[2026_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Bakery_Cereal_Products_Average]' />
-          <map key='[2026_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Beef_Average]' />
-          <map key='[2026_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Bread_Average]' />
-          <map key='[2026_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Breakfast_and_Brunch_Away_from_Home_Average]' />
-          <map key='[2026_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Dairy_Products_Average]' />
-          <map key='[2026_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Dinner_Away_from_Home_Average]' />
-          <map key='[2026_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Eggs_Average]' />
-          <map key='[2026_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Flour_Average]' />
-          <map key='[2026_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Food_Average]' />
-          <map key='[2026_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Food_Away_from_Home_Average]' />
-          <map key='[2026_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Food_at_Home_Average]' />
-          <map key='[2026_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Fruit_Vegetables_Average]' />
-          <map key='[2026_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Lunch_Away_from_Home_Average]' />
-          <map key='[2026_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Meat_Poultry_Fish_Eggs_Average]' />
-          <map key='[2026_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-          <map key='[2026_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Pork_Average]' />
-          <map key='[2026_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Poultry_Average]' />
-          <map key='[2026_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Rice_Average]' />
-          <map key='[2026_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[2026_Seafood_Average]' />
-          <map key='[countyFIPS]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[countyFIPS]' />
-          <map key='[countyName]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[countyName]' />
-          <map key='[farmersMarketsAcceptingWIC]' value='[cdc_state_indicator_report_fruit_veg].[farmersMarketsAcceptingWIC]' />
-          <map key='[farmersMarketsPer100000]' value='[cdc_state_indicator_report_fruit_veg].[farmersMarketsPer100000]' />
-          <map key='[foodHubs]' value='[cdc_state_indicator_report_fruit_veg].[foodHubs]' />
-          <map key='[localFoodPolicyCouncils]' value='[cdc_state_indicator_report_fruit_veg].[localFoodPolicyCouncils]' />
-          <map key='[schoolSaladBars]' value='[cdc_state_indicator_report_fruit_veg].[schoolSaladBars]' />
-          <map key='[schoolsWithFarmToSchoolProgram]' value='[cdc_state_indicator_report_fruit_veg].[schoolsWithFarmToSchoolProgram]' />
-          <map key='[stateFIPS (cdc_state_indicator_report_fruit_veg)]' value='[cdc_state_indicator_report_fruit_veg].[stateFIPS]' />
-          <map key='[stateFIPS]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[stateFIPS]' />
-          <map key='[stateFoodPolicyCouncil]' value='[cdc_state_indicator_report_fruit_veg].[stateFoodPolicyCouncil]' />
-          <map key='[stateName (cdc_state_indicator_report_fruit_veg)]' value='[cdc_state_indicator_report_fruit_veg].[stateName]' />
-          <map key='[stateName]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv].[stateName]' />
-          <map key='[state]' value='[cdc_state_indicator_report_fruit_veg].[state]' />
-        </cols>
-        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
             <parent-name>[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -11791,194 +11724,133 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>stateFIPS</remote-name>
+            <remote-name>Local Food Policy Councils</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Local Food Policy Councils]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>Local Food Policy Councils</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State (Cdc State Indicator Report Fruit Veg)</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[stateFIPS (cdc_state_indicator_report_fruit_veg)]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>stateFIPS</remote-alias>
+            <local-name>[State (Cdc State Indicator Report Fruit Veg)]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>State (Cdc State Indicator Report Fruit Veg)</remote-alias>
             <ordinal>87</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
+            <scale>1</scale>
+            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>state</remote-name>
+            <remote-name>State Food Policy Council</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[state]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>state</remote-alias>
+            <local-name>[State Food Policy Council]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>State Food Policy Council</remote-alias>
             <ordinal>88</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>2</width>
+            <scale>1</scale>
+            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>stateName</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[stateName (cdc_state_indicator_report_fruit_veg)]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>stateName</remote-alias>
+            <remote-name>stateFIPS (cdc state indicator report fruit veg)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stateFIPS (cdc state indicator report fruit veg)]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>stateFIPS (cdc state indicator report fruit veg)</remote-alias>
             <ordinal>89</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>farmersMarketsPer100000</remote-name>
+            <remote-name>stateName (cdc state indicator report fruit veg)</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[farmersMarketsPer100000]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>farmersMarketsPer100000</remote-alias>
+            <local-name>[stateName (cdc state indicator report fruit veg)]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>stateName (cdc state indicator report fruit veg)</remote-alias>
             <ordinal>90</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
+            <scale>1</scale>
+            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>farmersMarketsAcceptingWIC</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[farmersMarketsAcceptingWIC]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>farmersMarketsAcceptingWIC</remote-alias>
+            <remote-name>Farmers Markets Accepting WIC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Farmers Markets Accepting WIC]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>Farmers Markets Accepting WIC</remote-alias>
             <ordinal>91</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>schoolsWithFarmToSchoolProgram</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[schoolsWithFarmToSchoolProgram]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>schoolsWithFarmToSchoolProgram</remote-alias>
+            <remote-name>farmersMarketsPer100000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[farmersMarketsPer100000]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>farmersMarketsPer100000</remote-alias>
             <ordinal>92</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>schoolSaladBars</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[schoolSaladBars]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>schoolSaladBars</remote-alias>
+            <remote-name>Food Hubs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Food Hubs]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>Food Hubs</remote-alias>
             <ordinal>93</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>stateFoodPolicyCouncil</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[stateFoodPolicyCouncil]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>stateFoodPolicyCouncil</remote-alias>
+            <remote-name>School Salad Bars</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[School Salad Bars]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>School Salad Bars</remote-alias>
             <ordinal>94</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>localFoodPolicyCouncils</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[localFoodPolicyCouncils]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>localFoodPolicyCouncils</remote-alias>
+            <remote-name>Schools With Farm To School Program</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Schools With Farm To School Program]</local-name>
+            <parent-name>[cdc_state_indicator_report_fruit_veg.csv]</parent-name>
+            <remote-alias>Schools With Farm To School Program</remote-alias>
             <ordinal>95</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>foodHubs</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[foodHubs]</local-name>
-            <parent-name>[cdc_state_indicator_report_fruit_veg]</parent-name>
-            <remote-alias>foodHubs</remote-alias>
-            <ordinal>96</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
-            <contains-null>true</contains-null>
-            <collation charset='280' flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
@@ -12088,22 +11960,16 @@
       <column caption='2021 Egg Contribution (FAwayH)' datatype='real' name='[Calculation_2627287490993934341]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='AVG([2021_Eggs_Average])/AVG([2021_Food_Away_from_Home_Average])' />
       </column>
-      <_.fcp.ObjectModelTableType.true...column caption='cdc_state_indicator_report_fruit_veg' datatype='table' name='[__tableau_internal_object_id__].[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State (Cdc State Indicator Report Fruit Veg)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State Food Policy Council]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='cdc_state_indicator_report_fruit_veg.csv' datatype='table' name='[__tableau_internal_object_id__].[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv' datatype='table' name='[__tableau_internal_object_id__].[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF]' role='measure' type='quantitative' />
       <column caption='County FIPS' datatype='string' name='[countyFIPS]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
       <column caption='County Name' datatype='string' name='[countyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
-      <column caption='Farmers Markets Accepting WIC' datatype='string' name='[farmersMarketsAcceptingWIC]' role='dimension' type='nominal' />
       <column datatype='real' datatype-customized='true' name='[farmersMarketsPer100000]' role='measure' type='quantitative' />
-      <column caption='Food Hubs' datatype='string' name='[foodHubs]' role='dimension' type='nominal' />
-      <column caption='Local Food Policy Councils' datatype='string' name='[localFoodPolicyCouncils]' role='dimension' type='nominal' />
-      <column caption='School Salad Bars' datatype='real' datatype-customized='true' name='[schoolSaladBars]' role='measure' type='quantitative' />
-      <column caption='Schools With Farm To School Program' datatype='real' datatype-customized='true' name='[schoolsWithFarmToSchoolProgram]' role='measure' type='quantitative' />
-      <column caption='stateFIPS (cdc state indicator report fruit veg)' datatype='string' name='[stateFIPS (cdc_state_indicator_report_fruit_veg)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='State FIPS' datatype='integer' name='[stateFIPS]' role='measure' type='quantitative' />
-      <column caption='State Food Policy Council' datatype='string' name='[stateFoodPolicyCouncil]' role='dimension' type='nominal' />
-      <column caption='stateName (cdc state indicator report fruit veg)' datatype='string' name='[stateName (cdc_state_indicator_report_fruit_veg)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[stateName (cdc state indicator report fruit veg)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='State Name' datatype='string' name='[stateName]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column-instance column='[2000_Beef_Average]' derivation='Avg' name='[avg:2000_Beef_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2000_Dinner_Away_from_Home_Average]' derivation='Avg' name='[avg:2000_Dinner_Away_from_Home_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2000_Eggs_Average]' derivation='Avg' name='[avg:2000_Eggs_Average:qk]' pivot='key' type='quantitative' />
@@ -12129,8 +11995,6 @@
       <column-instance column='[2026_Food_at_Home_Average]' derivation='Avg' name='[avg:2026_Food_at_Home_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2026_Lunch_Away_from_Home_Average]' derivation='Avg' name='[avg:2026_Lunch_Away_from_Home_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[farmersMarketsPer100000]' derivation='Avg' name='[avg:farmersMarketsPer100000:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[schoolSaladBars]' derivation='Avg' name='[avg:schoolSaladBars:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[schoolsWithFarmToSchoolProgram]' derivation='Avg' name='[avg:schoolsWithFarmToSchoolProgram:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2000_Beef_Average]' derivation='Sum' name='[sum:2000_Beef_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2000_Dinner_Away_from_Home_Average]' derivation='Sum' name='[sum:2000_Dinner_Away_from_Home_Average:qk]' pivot='key' type='quantitative' />
       <column-instance column='[2000_Eggs_Average]' derivation='Sum' name='[sum:2000_Eggs_Average:qk]' pivot='key' type='quantitative' />
@@ -12165,112 +12029,14 @@
       <column-instance column='[2021 Egg Contribution (FAwayH) (copy)_2627287491068387339]' derivation='User' name='[usr:2021 Egg Contribution (FAwayH) (copy)_2627287491068387339:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_2627287490993934341]' derivation='User' name='[usr:Calculation_2627287490993934341:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/joelm/Documents/My Tableau Repository/Datasources/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2022 03:26:24 PM' username='tableau_internal_user'>
-          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02' table='[Extract].[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]' type='table' />
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/joelm/Documents/My Tableau Repository/Datasources/Other/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2022 06:34:01 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6' table='[Extract].[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF' table='[Extract].[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF]' type='table' />
-            <relation name='cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02' table='[Extract].[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]' type='table' />
+            <relation name='cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6' table='[Extract].[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]' type='table' />
           </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-          <cols>
-            <map key='[2000_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Alcoholic_Beverages_Average]' />
-            <map key='[2000_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Bakery_Cereal_Products_Average]' />
-            <map key='[2000_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Beef_Average]' />
-            <map key='[2000_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Bread_Average]' />
-            <map key='[2000_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Breakfast_and_Brunch_Away_from_Home_Average]' />
-            <map key='[2000_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Dairy_Products_Average]' />
-            <map key='[2000_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Dinner_Away_from_Home_Average]' />
-            <map key='[2000_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Eggs_Average]' />
-            <map key='[2000_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Flour_Average]' />
-            <map key='[2000_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Food_Average]' />
-            <map key='[2000_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Food_Away_from_Home_Average]' />
-            <map key='[2000_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Food_at_Home_Average]' />
-            <map key='[2000_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Fruit_Vegetables_Average]' />
-            <map key='[2000_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Lunch_Away_from_Home_Average]' />
-            <map key='[2000_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Meat_Poultry_Fish_Eggs_Average]' />
-            <map key='[2000_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-            <map key='[2000_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Pork_Average]' />
-            <map key='[2000_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Poultry_Average]' />
-            <map key='[2000_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Rice_Average]' />
-            <map key='[2000_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2000_Seafood_Average]' />
-            <map key='[2010_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Alcoholic_Beverages_Average]' />
-            <map key='[2010_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Bakery_Cereal_Products_Average]' />
-            <map key='[2010_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Beef_Average]' />
-            <map key='[2010_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Bread_Average]' />
-            <map key='[2010_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Breakfast_and_Brunch_Away_from_Home_Average]' />
-            <map key='[2010_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Dairy_Products_Average]' />
-            <map key='[2010_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Dinner_Away_from_Home_Average]' />
-            <map key='[2010_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Eggs_Average]' />
-            <map key='[2010_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Flour_Average]' />
-            <map key='[2010_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Food_Average]' />
-            <map key='[2010_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Food_Away_from_Home_Average]' />
-            <map key='[2010_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Food_at_Home_Average]' />
-            <map key='[2010_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Fruit_Vegetables_Average]' />
-            <map key='[2010_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Lunch_Away_from_Home_Average]' />
-            <map key='[2010_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Meat_Poultry_Fish_Eggs_Average]' />
-            <map key='[2010_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-            <map key='[2010_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Pork_Average]' />
-            <map key='[2010_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Poultry_Average]' />
-            <map key='[2010_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Rice_Average]' />
-            <map key='[2010_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2010_Seafood_Average]' />
-            <map key='[2021_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Alcoholic_Beverages_Average]' />
-            <map key='[2021_Annual_Budget_Expenditures_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Annual_Budget_Expenditures_Average]' />
-            <map key='[2021_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Bakery_Cereal_Products_Average]' />
-            <map key='[2021_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Beef_Average]' />
-            <map key='[2021_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Bread_Average]' />
-            <map key='[2021_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Breakfast_and_Brunch_Away_from_Home_Average]' />
-            <map key='[2021_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Dairy_Products_Average]' />
-            <map key='[2021_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Dinner_Away_from_Home_Average]' />
-            <map key='[2021_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Eggs_Average]' />
-            <map key='[2021_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Flour_Average]' />
-            <map key='[2021_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Food_Average]' />
-            <map key='[2021_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Food_Away_from_Home_Average]' />
-            <map key='[2021_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Food_at_Home_Average]' />
-            <map key='[2021_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Fruit_Vegetables_Average]' />
-            <map key='[2021_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Lunch_Away_from_Home_Average]' />
-            <map key='[2021_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Meat_Poultry_Fish_Eggs_Average]' />
-            <map key='[2021_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-            <map key='[2021_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Pork_Average]' />
-            <map key='[2021_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Poultry_Average]' />
-            <map key='[2021_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Rice_Average]' />
-            <map key='[2021_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2021_Seafood_Average]' />
-            <map key='[2026_Alcoholic_Beverages_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Alcoholic_Beverages_Average]' />
-            <map key='[2026_Annual_Budget_Expenditures_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Annual_Budget_Expenditures_Average]' />
-            <map key='[2026_Bakery_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Bakery_Cereal_Products_Average]' />
-            <map key='[2026_Beef_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Beef_Average]' />
-            <map key='[2026_Bread_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Bread_Average]' />
-            <map key='[2026_Breakfast_and_Brunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Breakfast_and_Brunch_Away_from_Home_Average]' />
-            <map key='[2026_Dairy_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Dairy_Products_Average]' />
-            <map key='[2026_Dinner_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Dinner_Away_from_Home_Average]' />
-            <map key='[2026_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Eggs_Average]' />
-            <map key='[2026_Flour_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Flour_Average]' />
-            <map key='[2026_Food_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Food_Average]' />
-            <map key='[2026_Food_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Food_Away_from_Home_Average]' />
-            <map key='[2026_Food_at_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Food_at_Home_Average]' />
-            <map key='[2026_Fruit_Vegetables_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Fruit_Vegetables_Average]' />
-            <map key='[2026_Lunch_Away_from_Home_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Lunch_Away_from_Home_Average]' />
-            <map key='[2026_Meat_Poultry_Fish_Eggs_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Meat_Poultry_Fish_Eggs_Average]' />
-            <map key='[2026_Pasta_Cornmeal_Other_Cereal_Products_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Pasta_Cornmeal_Other_Cereal_Products_Average]' />
-            <map key='[2026_Pork_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Pork_Average]' />
-            <map key='[2026_Poultry_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Poultry_Average]' />
-            <map key='[2026_Rice_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Rice_Average]' />
-            <map key='[2026_Seafood_Average]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[2026_Seafood_Average]' />
-            <map key='[countyFIPS]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[countyFIPS]' />
-            <map key='[countyName]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[countyName]' />
-            <map key='[farmersMarketsAcceptingWIC]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[farmersMarketsAcceptingWIC]' />
-            <map key='[farmersMarketsPer100000]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[farmersMarketsPer100000]' />
-            <map key='[foodHubs]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[foodHubs]' />
-            <map key='[localFoodPolicyCouncils]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[localFoodPolicyCouncils]' />
-            <map key='[schoolSaladBars]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[schoolSaladBars]' />
-            <map key='[schoolsWithFarmToSchoolProgram]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[schoolsWithFarmToSchoolProgram]' />
-            <map key='[stateFIPS (cdc_state_indicator_report_fruit_veg)]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[stateFIPS]' />
-            <map key='[stateFIPS]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[stateFIPS]' />
-            <map key='[stateFoodPolicyCouncil]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[stateFoodPolicyCouncil]' />
-            <map key='[stateName (cdc_state_indicator_report_fruit_veg)]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[stateName]' />
-            <map key='[stateName]' value='[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF].[stateName]' />
-            <map key='[state]' value='[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02].[state]' />
-          </cols>
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='esri_food_prefs_2000_2010_2021_2026_cleaned_wide' increment-value='%null%' refresh-type='create' rows-inserted='3194' timestamp-start='2022-07-26 15:26:22.303' />
+          <refresh>
+            <refresh-event add-from-file-path='esri_food_prefs_2000_2010_2021_2026_cleaned_wide' increment-value='%null%' refresh-type='create' rows-inserted='3194' timestamp-start='2022-07-26 18:34:00.763' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -13481,156 +13247,152 @@
               <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>stateFIPS</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[stateFIPS (cdc_state_indicator_report_fruit_veg)]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>stateFIPS</remote-alias>
+              <remote-name>Local Food Policy Councils</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Local Food Policy Councils]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>Local Food Policy Councils</remote-alias>
               <ordinal>86</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State (Cdc State Indicator Report Fruit Veg)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State (Cdc State Indicator Report Fruit Veg)]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>State (Cdc State Indicator Report Fruit Veg)</remote-alias>
+              <ordinal>87</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State Food Policy Council</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State Food Policy Council]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>State Food Policy Council</remote-alias>
+              <ordinal>88</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stateFIPS (cdc state indicator report fruit veg)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stateFIPS (cdc state indicator report fruit veg)]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>stateFIPS (cdc state indicator report fruit veg)</remote-alias>
+              <ordinal>89</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
               <approx-count>51</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>state</remote-name>
+              <remote-name>stateName (cdc state indicator report fruit veg)</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[state]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>state</remote-alias>
-              <ordinal>87</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
+              <local-name>[stateName (cdc state indicator report fruit veg)]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>stateName (cdc state indicator report fruit veg)</remote-alias>
+              <ordinal>90</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
               <approx-count>52</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>stateName</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[stateName (cdc_state_indicator_report_fruit_veg)]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>stateName</remote-alias>
-              <ordinal>88</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>52</approx-count>
+              <remote-name>Farmers Markets Accepting WIC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Farmers Markets Accepting WIC]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>Farmers Markets Accepting WIC</remote-alias>
+              <ordinal>91</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>farmersMarketsPer100000</remote-name>
               <remote-type>5</remote-type>
               <local-name>[farmersMarketsPer100000]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
               <remote-alias>farmersMarketsPer100000</remote-alias>
-              <ordinal>89</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
+              <ordinal>92</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>37</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>farmersMarketsAcceptingWIC</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[farmersMarketsAcceptingWIC]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>farmersMarketsAcceptingWIC</remote-alias>
-              <ordinal>90</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>47</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>schoolsWithFarmToSchoolProgram</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[schoolsWithFarmToSchoolProgram]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>schoolsWithFarmToSchoolProgram</remote-alias>
-              <ordinal>91</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>real</local-type>
+              <remote-name>Food Hubs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Food Hubs]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>Food Hubs</remote-alias>
+              <ordinal>93</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>49</approx-count>
+              <approx-count>14</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>schoolSaladBars</remote-name>
+              <remote-name>School Salad Bars</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[schoolSaladBars]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>schoolSaladBars</remote-alias>
-              <ordinal>92</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
+              <local-name>[School Salad Bars]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>School Salad Bars</remote-alias>
+              <ordinal>94</ordinal>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
               <approx-count>48</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>stateFoodPolicyCouncil</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[stateFoodPolicyCouncil]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>stateFoodPolicyCouncil</remote-alias>
-              <ordinal>93</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>4</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>localFoodPolicyCouncils</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[localFoodPolicyCouncils]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>localFoodPolicyCouncils</remote-alias>
-              <ordinal>94</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>16</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>foodHubs</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[foodHubs]</local-name>
-              <parent-name>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</parent-name>
-              <remote-alias>foodHubs</remote-alias>
+              <remote-name>Schools With Farm To School Program</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Schools With Farm To School Program]</local-name>
+              <parent-name>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</parent-name>
+              <remote-alias>Schools With Farm To School Program</remote-alias>
               <ordinal>95</ordinal>
-              <family>cdc_state_indicator_report_fruit_veg</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>14</approx-count>
+              <family>cdc_state_indicator_report_fruit_veg.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.638028' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.361972' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.967606' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0323944' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -13876,12 +13638,25 @@
       </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='cdc_state_indicator_report_fruit_veg' id='cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02'>
+          <object caption='cdc_state_indicator_report_fruit_veg.csv' id='cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6'>
             <properties context=''>
-              <relation connection='mariadb.02znkio10ol89v16s2nz60yqor8s' name='cdc_state_indicator_report_fruit_veg' table='[cdc_state_indicator_report_fruit_veg]' type='table' />
+              <relation connection='textscan.1ldew011gn3k1914xqzm90acc112' name='cdc_state_indicator_report_fruit_veg.csv' table='[cdc_state_indicator_report_fruit_veg#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Local Food Policy Councils' ordinal='0' />
+                  <column datatype='string' name='State (Cdc State Indicator Report Fruit Veg)' ordinal='1' />
+                  <column datatype='string' name='State Food Policy Council' ordinal='2' />
+                  <column datatype='integer' name='stateFIPS (cdc state indicator report fruit veg)' ordinal='3' />
+                  <column datatype='string' name='stateName (cdc state indicator report fruit veg)' ordinal='4' />
+                  <column datatype='real' name='Farmers Markets Accepting WIC' ordinal='5' />
+                  <column datatype='real' name='farmersMarketsPer100000' ordinal='6' />
+                  <column datatype='integer' name='Food Hubs' ordinal='7' />
+                  <column datatype='real' name='School Salad Bars' ordinal='8' />
+                  <column datatype='real' name='Schools With Farm To School Program' ordinal='9' />
+                </columns>
+              </relation>
             </properties>
             <properties context='extract'>
-              <relation name='cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02' table='[Extract].[cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02]' type='table' />
+              <relation name='cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6' table='[Extract].[cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6]' type='table' />
             </properties>
           </object>
           <object caption='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv' id='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF'>
@@ -13986,10 +13761,10 @@
           <relationship>
             <expression op='='>
               <expression op='[stateName]' />
-              <expression op='[stateName (cdc_state_indicator_report_fruit_veg)]' />
+              <expression op='[stateName (cdc state indicator report fruit veg)]' />
             </expression>
             <first-end-point object-id='esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv_36744906194544309DD6F79D87FACACF' />
-            <second-end-point object-id='cdc_state_indicator_report_fruit_veg_D9B83BDC3149415E9C9BB1D112512A02' />
+            <second-end-point object-id='cdc_state_indicator_report_fruit_veg.csv_0C622BF4B7024BB5B37B97F938055FB6' />
           </relationship>
         </relationships>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
@@ -15605,8 +15380,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='84' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98546' id='83' param='vert' type-v2='layout-flow' w='98118' x='941' y='727'>
+            <zone h='100000' id='90' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98546' id='89' param='vert' type-v2='layout-flow' w='98118' x='941' y='727'>
                 <zone forceUpdate='true' h='4455' id='13' type-v2='text' w='92941' x='3529' y='1727'>
                   <formatted-text>
                     <run bold='true' fontcolor='#ffffff' fontname='Univers LT Std' fontsize='18'> Market Consumption Profile</run>
@@ -15802,8 +15577,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='76' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='83' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98546' id='82' param='vert' type-v2='layout-flow' w='98118' x='941' y='727'>
                 <zone forceUpdate='true' h='4455' id='13' type-v2='text' w='92941' x='3529' y='1727'>
                   <formatted-text>
                     <run bold='true' fontcolor='#ffffff' fontname='Univers LT Std' fontsize='18'> Market Consumption Profile</run>
@@ -16229,11 +16004,6 @@
           </strip>
           <strip size='31'>
             <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1vwsru417pgwyj0zquj060lwofxj].[:Measure Names]' type='color' />
           </strip>
         </edge>
       </cards>
