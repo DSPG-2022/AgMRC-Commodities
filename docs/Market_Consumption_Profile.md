@@ -6,8 +6,6 @@
 
 This page explains the steps taken to create the market consumption profile page of the commodity reports.
 
-<br> 
-
 ### Data Sources
 
 | Data Name                           | Level     | Accessed Through                    | Usage                                                                                 |
@@ -17,6 +15,7 @@ This page explains the steps taken to create the market consumption profile page
 | CDC State Indicator Report          | Secondary | MariaDB                             | Used to find number of food hubs in a state.                                          |
 | Data Axle Genie                     | Secondary | MariaDB                             | Used to find number of grocery stores and restaurants in a state.                     |
 
+<br>
 ### Data Acquisition
 
 The primary ESRI data source had 2020 and 2010 data from the previous teams work.
