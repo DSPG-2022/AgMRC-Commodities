@@ -6,6 +6,8 @@
 
 This page explains the steps taken to create the market consumption profile page of the commodity reports.
 
+<br>
+
 ### Data Sources
 
 | Data Name                           | Level     | Accessed Through                    | Usage                                                                                 |
@@ -25,6 +27,8 @@ Through Iowa State University, I was able to get a temporary license to get acce
 
 The secondary data sources were re-used from the previous teams work.
 
+<br>
+
 ### Data Transformation
 
 After accessing the new ESRI data through Arc GIS Pro, the following R script was used to: 
@@ -32,6 +36,8 @@ After accessing the new ESRI data through Arc GIS Pro, the following R script wa
 1. Combine the old ESRI data to the new ESRI data
 2. Transform the data from wide format into long format
 3. General cleaning of column names and standardization of state names
+
+<br>
 
 ### ESRI Transformation Code
 
@@ -46,6 +52,8 @@ This section loads in the libraries and necessary data sources
 	# Read in data
 	esri_2000_2010 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
 	esri_2021_2026 <- read.csv(file.choose(), header=TRUE, stringsAsFactors=FALSE, check.names = FALSE)
+
+<br>
 
 This section updates the old ESRI data names to match the new ESRI data names. This is important later on when a single parsing function is used to split the year from the category name.
 This was done by using indexes since the column ordering is different in the old vs. new ESRI data.
@@ -92,12 +100,16 @@ This was done by using indexes since the column ordering is different in the old
 	                               '2010_Breakfast_and_Brunch_Away_from_Home_Average'  = 44,
 	                               '2010_Alcoholic_Beverages_Average'                  = 45)
 
+<br>
+
 This section converts the data from the tract level to the county level.
 
 	# Change 2000/2010 data from tract to county level
 	esri_2000_2010_new <- esri_2000_2010 %>%
 	  group_by(stateFIPS,countyFIPS) %>%
 	  summarise_at(vars(5:44), list(name = mean))
+
+<br>
 
 R added the word name to the column titles so this code removes that word.
 
@@ -106,6 +118,8 @@ R added the word name to the column titles so this code removes that word.
 	  colnames(esri_2000_2010_new)[col] <-  sub("_name.*", "", colnames(esri_2000_2010_new)[col])
 	}
 
+<br>
+
 This section updates the new ESRI data column names that havn't been changed before to titles matching the old ESRI dat that I felt better fit the columns. It is also important that the column names are the same for merging later on.
 
 	# Rename columns in 2021/2026 data to match column names in 2000/2010 data
@@ -113,6 +127,8 @@ This section updates the new ESRI data column names that havn't been changed bef
 	                    rename(countyFIPS = 1,
 	                           countyName = 2,
 	                           stateName = 3)
+
+<br>
 
 This part updates the state abbreviations to full names for easier use in Tableau.
 
@@ -154,119 +170,164 @@ This part updates the state abbreviations to full names for easier use in Tablea
 	      }
 	    }
 	    
-    # Sets the new array of state names to replace the current state name column of abbreviations
-    esri_2021_2026$stateName <- stateNames
+	    # Sets the new array of state names to replace the current state name column of abbreviations
+	    esri_2021_2026$stateName <- stateNames
 
-# Get columns of population data from esri 2021 and 2026 data and drop from data
-esri_2021_2026_population <- esri_2021_2026[c(1:3,46:47)]
-esri_2021_2026_updated <- subset(esri_2021_2026, select = -c(46:47))
+<br>
 
-# Join 2000/2010 data and 2021/2026 data
-esri_cleaned <- merge(x = esri_2000_2010_new, y = esri_2021_2026_updated, by = "countyFIPS", all.y = TRUE)
+This section removes some un-needed columns from the new ESRI data.
 
-# Remove word county from county names
-stopword = c("County")
-x  = esri_cleaned$countyName
-x  =  removeWords(x,stopword)
-esri_cleaned$countyName <- x
+	# Get columns of population data from esri 2021 and 2026 data and drop from data
+	esri_2021_2026_population <- esri_2021_2026[c(1:3,46:47)]
+	esri_2021_2026_updated <- subset(esri_2021_2026, select = -c(46:47))
 
-# Add 0 to start of 4 digit fips since they have been dropped
+<br>
 
-    # Empty vector set to the length of the esri_cleaned dataset.
-    # This method greatly increases the speed of the for loop
-    # since the array is already the length it needs whereas using
-    # a function such as append requires R to constantly run through
-    # the entire array and update the length accordingly.
-    countyFIPS <- vector(length = dim(esri_cleaned)[1])
-    
-    # Index to keep track of array index
-    index <- 0
-    
-    # For each countyFIPS in the countyFIPS column
-    for(x in esri_cleaned$countyFIPS){
-      
-      # Increase index (Note: R indexes start at 1)
-      index <- index + 1
-      
-      # If the number of characters is 4 this indicates that
-      # the 0 has been dropped from the start of the countyFIPS
-      # since countFIPS are 5 digits.
-      # Adds 0 if this is the case.
-      if(nchar(x) == 4){
-        countyFIPS[index] <- paste0("0",x)
-      }
-      
-      # Otherwise countyFIPS is in 5 digit format.
-      # add to array.
-      else {
-        countyFIPS[index] <- x
-      }
-    }
-    
-    # Set updated countyFIPS array to old countFIPS array
-    esri_cleaned$countyFIPS <- countyFIPS
+Now we can join the old and new data together.
 
-# ESRI 2000/2010/2021/2026 is now in cleaned wide format and can be saved.
-    
-    # Save wide format to file
-    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv", row.names = FALSE)
+	# Join 2000/2010 data and 2021/2026 data
+	esri_cleaned <- merge(x = esri_2000_2010_new, y = esri_2021_2026_updated, by = "countyFIPS", all.y = TRUE)
 
-###################        Change ESRI data into long format        ###################
-# Change form to long
-esri_cleaned <- esri_cleaned %>%
-  pivot_longer(
-    -c(1:2,43:44),
-    names_to = "category",
-    values_to = "dollars"
-  )
+<br>
 
-# round dollar amounts to 2 decimals
-esri_cleaned$dollars <- round(esri_cleaned$dollars, digit = 2)
+County names are in the format "Name County", this code removes the word "County" from the county names.
 
-# Split to get year from category names
-esri_cleaned <- esri_cleaned %>%
-  separate(category,into = c('year','category'),sep = "_",remove = FALSE,extra = "merge")
+	# Remove word county from county names
+	stopword = c("County")
+	x  = esri_cleaned$countyName
+	x  =  removeWords(x,stopword)
+	esri_cleaned$countyName <- x
 
-# make countyFIPS a char column
-esri_cleaned$countyFIPS <-as.character(esri_cleaned$countyFIPS)
+<br>
 
-# Add 0 to start of 4 digit fips since they have been dropped
+Because of csv formatting the 5 digit county FIPS codes that start with 0 have had the first 0 dropped resulting in 4 digit county FIPS codes. This code adds the 0 back.
 
-# Empty vector set to the length of the esri_cleaned dataset.
-# This method greatly increases the speed of the for loop
-# since the array is already the length it needs whereas using
-# a function such as append requires R to constantly run through
-# the entire array and update the length accordingly.
-countyFIPS <- vector(length = dim(esri_cleaned)[1])
+	# Add 0 to start of 4 digit fips since they have been dropped
+	
+	    # Empty vector set to the length of the esri_cleaned dataset.
+	    # This method greatly increases the speed of the for loop
+	    # since the array is already the length it needs whereas using
+	    # a function such as append requires R to constantly run through
+	    # the entire array and update the length accordingly.
+	    countyFIPS <- vector(length = dim(esri_cleaned)[1])
+	    
+	    # Index to keep track of array index
+	    index <- 0
+	    
+	    # For each countyFIPS in the countyFIPS column
+	    for(x in esri_cleaned$countyFIPS){
+	      
+	      # Increase index (Note: R indexes start at 1)
+	      index <- index + 1
+	      
+	      # If the number of characters is 4 this indicates that
+	      # the 0 has been dropped from the start of the countyFIPS
+	      # since countFIPS are 5 digits.
+	      # Adds 0 if this is the case.
+	      if(nchar(x) == 4){
+	        countyFIPS[index] <- paste0("0",x)
+	      }
+	      
+	      # Otherwise countyFIPS is in 5 digit format.
+	      # add to array.
+	      else {
+	        countyFIPS[index] <- x
+	      }
+	    }
+	    
+	    # Set updated countyFIPS array to old countFIPS array
+	    esri_cleaned$countyFIPS <- countyFIPS
 
-# Index to keep track of array index
-index <- 0
+<br>
 
-# For each countyFIPS in the countyFIPS column
-for(x in esri_cleaned$countyFIPS){
-  
-  # Increase index (Note: R indexes start at 1)
-  index <- index + 1
-  
-  # If the number of characters is 4 this indicates that
-  # the 0 has been dropped from the start of the countyFIPS
-  # since countFIPS are 5 digits.
-  # Adds 0 if this is the case.
-  if(nchar(x) == 4){
-    countyFIPS[index] <- paste0("0",x)
-  }
-  
-  # Otherwise countyFIPS is in 5 digit format.
-  # add to array.
-  else {
-    countyFIPS[index] <- x
-  }
-}
+Now the ESRI data is cleaned and in wide format. It can be written to a new csv file.
 
-# Set updated countyFIPS array to old countFIPS array
-esri_cleaned$countyFIPS <- countyFIPS
+	# ESRI 2000/2010/2021/2026 is now in cleaned wide format and can be saved.
+	    
+	    # Save wide format to file
+	    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv", row.names = FALSE)
 
-# ESRI 2000/2010/2021/2026 is now in cleaned long format and can be saved.
+<br>
 
-    # write long format to file
-    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv", row.names = FALSE)
+Another form of the code needed is the long format.
+
+This portion converts the wide data format into the long format.
+
+	###################        Change ESRI data into long format        ###################
+	# Change form to long
+	esri_cleaned <- esri_cleaned %>%
+	  pivot_longer(
+	    -c(1:2,43:44),
+	    names_to = "category",
+	    values_to = "dollars"
+	  )
+
+<br>
+
+After the conversion dollar values have very long decimal values. This code rounds it to the nearest cent.
+
+	# round dollar amounts to 2 decimals
+	esri_cleaned$dollars <- round(esri_cleaned$dollars, digit = 2)
+
+<br>
+
+As mention earlier, the category names have the year in them. This was removed and put into a new year column.
+
+	# Split to get year from category names
+	esri_cleaned <- esri_cleaned %>%
+	  separate(category,into = c('year','category'),sep = "_",remove = FALSE,extra = "merge")
+
+<br>
+
+As with the wide data, the 5 digit county FIPS codes that start with 0 have had the first 0 dropped resulting in 4 digit county FIPS codes. This code adds the 0 back.
+
+	# make countyFIPS a char column
+	esri_cleaned$countyFIPS <-as.character(esri_cleaned$countyFIPS)
+	
+	# Add 0 to start of 4 digit fips since they have been dropped
+	
+	# Empty vector set to the length of the esri_cleaned dataset.
+	# This method greatly increases the speed of the for loop
+	# since the array is already the length it needs whereas using
+	# a function such as append requires R to constantly run through
+	# the entire array and update the length accordingly.
+	countyFIPS <- vector(length = dim(esri_cleaned)[1])
+	
+	# Index to keep track of array index
+	index <- 0
+	
+	# For each countyFIPS in the countyFIPS column
+	for(x in esri_cleaned$countyFIPS){
+	  
+	  # Increase index (Note: R indexes start at 1)
+	  index <- index + 1
+	  
+	  # If the number of characters is 4 this indicates that
+	  # the 0 has been dropped from the start of the countyFIPS
+	  # since countFIPS are 5 digits.
+	  # Adds 0 if this is the case.
+	  if(nchar(x) == 4){
+	    countyFIPS[index] <- paste0("0",x)
+	  }
+	  
+	  # Otherwise countyFIPS is in 5 digit format.
+	  # add to array.
+	  else {
+	    countyFIPS[index] <- x
+	  }
+	}
+	
+	# Set updated countyFIPS array to old countFIPS array
+	esri_cleaned$countyFIPS <- countyFIPS
+
+<br>
+
+The long data is now cleaned and can be written to a new csv file.
+
+	# ESRI 2000/2010/2021/2026 is now in cleaned long format and can be saved.
+	
+	    # write long format to file
+	    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv", row.names = FALSE)
+
+<br>
+
