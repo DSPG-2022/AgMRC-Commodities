@@ -157,7 +157,7 @@ esri_cleaned$countyName <- x
 # ESRI 2000/2010/2021/2026 is now in cleaned wide format and can be saved.
     
     # Save wide format to file
-    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv", row.names = FALSE)
+    write.csv(esri_cleaned, "../GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_wide.csv", row.names = FALSE)
 
 ###################        Change ESRI data into long format        ###################
 # Change form to long
@@ -217,4 +217,4 @@ esri_cleaned$countyFIPS <- countyFIPS
 # ESRI 2000/2010/2021/2026 is now in cleaned long format and can be saved.
 
     # write long format to file
-    write.csv(esri_cleaned, "C:/Users/joelm/Documents/GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv", row.names = FALSE)
+    write.csv(esri_cleaned, "../GitHub/AgMRC-Commodities/Joel_Martin/Data/esri_food_prefs_2000_2010_2021_2026_cleaned_long.csv", row.names = FALSE)
