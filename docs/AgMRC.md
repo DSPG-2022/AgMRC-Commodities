@@ -4,9 +4,7 @@ The Data Science for the Public Good (DSPG) Young Scholars program is an immersi
 
 <br>
 
-## I2D2 Dashboard 2021
-The goal of the I2D2 Dashboard project was to build tools for data collection to produce indicators of childhood wellness as identified by [Early Childhood Iowa](https://earlychildhood.iowa.gov/document/indicators-and-data-dictionary) and structure this data within an accessible [**dashboard**](https://i2d2.shinyapps.io/DSPG_2021_Dashboard/).
-
-This dashboard should serve a wide array of purposes, including providing data for early childhood agencies writing grant applications, aiding advocacy work, and informing policy-makers and legislators about the state of early childhood wellness.
+## AgMRC Commodity Dashboards
+AGMRC Commodity dashboards can be used as preliminary research in determining current production, market analysis, demographic data and price points. It can be useful in applying for a wide variety of grant funding, financial institutional loans, etc. The customizable marketing studies provide Value Added Producer Grant (VAPG) applicants with market intelligence that can easily be incorporated into feasibility studies and business plans that support the application process.
 
 <br>
