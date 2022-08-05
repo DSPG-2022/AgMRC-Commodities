@@ -23,7 +23,7 @@ Develop end to end automated report:
 
 ### **Outcomes**
 
-# Market Consumption Profile
+### Market Consumption Profile
 
 #### Author: Joel Martin
 
