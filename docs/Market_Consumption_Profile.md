@@ -16,6 +16,7 @@ This page explains the steps taken to create the market consumption profile page
 | Data Axle Genie                     | Secondary | MariaDB                             | Used to find number of grocery stores and restaurants in a state.                     |
 
 <br>
+
 ### Data Acquisition
 
 The primary ESRI data source had 2020 and 2010 data from the previous teams work.
