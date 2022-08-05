@@ -8,27 +8,27 @@ This page is an overview of the market consumption profile and data behind it.
 
 ##### Report Page
 
-![Market Consumption Page](Images/Screenshot 2022-08-03 152711.jpg)
+![Market Consumption Page](Images/Market_Consumption_Page.jpg)
 
 ##### Iowa Average Yearly Egg Expenditure Changes
 
-![Average Yearly Egg Expenditure Changes](Images/Screenshot 2022-07-29 144602.jpg)
+![Average Yearly Egg Expenditure Changes](Images/Average_Yearly_Egg_Expenditure_Changes.jpg)
 
 ##### 2021 Iowa Average Yearly Egg Expenditure
 
-![2021 Iowa Average Yearly Egg Expenditure](Images/Screenshot 2022-07-29 144758.jpg)
+![2021 Iowa Average Yearly Egg Expenditure](Images/2021_Iowa_Average_Yearly_Egg_Expenditure.jpg)
 
 ##### 2021 Iowa Food Expenditure
 
-![2021 Iowa Food Expenditure](Images/Screenshot 2022-07-26 113230.jpg)
+![2021 Iowa Food Expenditure](Images/2021_Iowa_Food_Expenditure.jpg)
 
 ##### Iowa Food Markets
 
-![Iowa Food Markets](images/Screenshot 2022-07-29 144843.jpg)
+![Iowa Food Markets](Images/Iowa_Food_Markets.jpg)
 
 ##### Iowa Farmers Markets per 100,000 People
 
-![Iowa Farmers Markets per 100,000 People](Images/Screenshot 2022-07-29 144959.jpg)
+![Iowa Farmers Markets per 100,000 People](Images/Iowa_Farmers_Markets.jpg)
 
 <br>
 
