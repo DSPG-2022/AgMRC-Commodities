@@ -45,7 +45,7 @@ This page is an overview of the market consumption profile and data behind it.
 
 ### Data Acquisition
 
-The primary ESRI data source had 2020 and 2010 data from the previous teams work.
+The primary ESRI data source had 2020 and 2010 data from the previous Data Science teams work.
 
 Through Iowa State University, I was able to get a temporary license to get access to new 2021 and 2026 predictions.
 
