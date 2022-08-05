@@ -12,7 +12,7 @@ AGMRC Commodity Reports in tableau can be used as preliminary research in determ
 ### **Objectives**
 
 Develop end to end automated report:
-- creation of two commodity reports(Egg and Beef)
+- create two commodity reports(Egg and Beef)
 - data discovery to find data sources to create finer detailed final product
 - explore new and interesting infographic techniques applicable to increased understanding
 - streamline all reports with better filters to handle differing data based on geography and year
