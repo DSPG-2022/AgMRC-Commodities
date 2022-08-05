@@ -1,8 +1,5 @@
 # Load libraries
-library(tidyr)
-library(dplyr)
-library(stringr)
-library(stringdist)
+library(tidyverse)
 library(tm)
 
 # Read in data
