@@ -78,6 +78,30 @@ After accessing the new ESRI data through Arc GIS Pro, the following R script wa
 
 <br>
 
-### ESRI Transformation Code
+## **Code**
 
-If you would like to see the R code used to transform the ESRI data please click [here](https://github.com/DSPG-2022/AgMRC-Commodities/blob/main/Joel_Martin/esri_data_cleaning_and_transformation_to_wide_and_long.R).
+<br>
+
+Corresponding code is available on:
+
+- [GitHub Repository](https://github.com/DSPG-2022/AgMRC-Commodities/tree/main/Codes)
+- For the Final Presentation click [here](https://github.com/DSPG-2022/AgMRC-Commodities/tree/main/Presentation)
+- Foe the Final Dashboards click [here](https://prod-useast-b.online.tableau.com/#/site/isueoced/views/BeefCommodityReport/MarketTrends?%3Adisplay_count=n&%3Aorigin=viz_share_link&%3AshowAppBanner=false&%3AshowVizHome=n)
+
+<br>
+
+
+## **Team**
+
+<br>
+
+The team  brought together backgrounds in Computer Science, Data Science, Economics, and Political Science, with interests in applications of technical skills to achieve meaningful impacts for decision making processes related to products at the local level.
+
+- **Rakesh Shah** - Team Leader, Iowa State University
+- **Muskan Tantia** - Graduate fellow, Iowa State University, Computer Science
+- **Maxwell Skinner** - Intern, Iowa State University, Data Science & Political Science
+- **Joel Martin** - Intern, Iowa State University, Data Science
+- **Tanishq Jain** - Intern, Clemson University, Computer Science and Economics
+
+<br>
+
