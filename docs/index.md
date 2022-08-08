@@ -76,34 +76,23 @@ Develop end to end automated report:
 
 <br>
 
-### Data Sources
+
+## **Data Sources**
+<br>
 
 | Data Name                           | Level     | Accessed Through                    | Usage                                                                                 | Website                                                                                                                                                                                              |
 |-------------------------------------|-----------|-------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ESRI Consumer Spending              | Primary   | Arc GIS Pro and previous teams work | Used to find consumer spending for egg, beef, and overall food at and away from home. | [https://doc.arcgis.com/en/esri-demographics/latest/regional-data/consumer-spending.htm](https://doc.arcgis.com/en/esri-demographics/latest/regional-data/consumer-spending.htm)                     |
-| USDA Agricultural Marketing Service | Secondary | MariaDB                             | Used to find number of CSAs and farmers markets in a state.                           | [https://www.ams.usda.gov/](https://www.ams.usda.gov/)                                                                                                                                               |
-| CDC State Indicator Report          | Secondary | MariaDB                             | Used to find number of food hubs in a state.                                          | [https://www.cdc.gov/nutrition/data-statistics/2018-state-indicator-report-fruits-vegetables.html](https://www.cdc.gov/nutrition/data-statistics/2018-state-indicator-report-fruits-vegetables.html) |
-| Data Axle Genie                     | Secondary | MariaDB                             | Used to find number of grocery stores and restaurants in a state.                     | [https://www.dataaxlegenie.com/](https://www.dataaxlegenie.com/)                                                                                                                                     |
+| ESRI Consumer Spending              | Primary   | Arc GIS Pro and previous teams work | Used to find consumer spending for egg, beef, and overall food at and away from home | [Link](https://doc.arcgis.com/en/esri-demographics/latest/regional-data/consumer-spending.htm)                     |
+| USDA Agricultural Marketing Service | Secondary | MariaDB                             | Used to find number of CSAs and farmers markets in a state                          | [Link](https://www.ams.usda.gov/)                                                                                                                                               |
+| CDC State Indicator Report          | Secondary | MariaDB                             | Used to find number of food hubs in a state                                          | [Link](https://www.cdc.gov/nutrition/data-statistics/2018-state-indicator-report-fruits-vegetables.html) |
+| Data Axle Genie                     | Secondary | MariaDB                             | Used to find number of grocery stores and restaurants in a state                     | [Link](https://www.dataaxlegenie.com/) |
+| National Oceanic and Atmospheric Administration                    | Primary   | Website                            | state historical weather data                      | [Link](https://www.noaa.gov/) |
+| USDA Local Food Directories                   | Primary   | Website                            | locations of farmer’s markets, food hubs                       | [Link](https://www.ams.usda.gov/local-food-directories/farmersmarkets) |
+| USDA Quickstats                  | Primary   | Website                            | survey and census data                       | [Link](https://quickstats.nass.usda.gov/) |
 
 <br>
 
-### Data Acquisition
-
-The primary ESRI data source had 2020 and 2010 data from the previous Data Science teams work.
-
-Through Iowa State University, I was able to get a temporary license to get access to new 2021 and 2026 predictions.
-
-The secondary data sources were re-used from the previous teams work.
-
-<br>
-
-### Data Transformation
-
-After accessing the new ESRI data through Arc GIS Pro, the following R script was used to: 
-
-1. Combine the old ESRI data to the new ESRI data
-2. Transform the data from wide format into long format
-3. General cleaning of column names and standardization of state names
+**Detailed information about sources used can be found [here](https://github.com/DSPG-2022/AgMRC-Commodities/tree/main/Data%20Sources)**
 
 <br>
 
@@ -115,7 +104,7 @@ Corresponding code is available on:
 
 - [GitHub Repository](https://github.com/DSPG-2022/AgMRC-Commodities/tree/main/Codes)
 - For the Final Presentation click [here](https://github.com/DSPG-2022/AgMRC-Commodities/tree/main/Presentation)
-- Foe the Final Dashboards click [here](https://prod-useast-b.online.tableau.com/#/site/isueoced/views/BeefCommodityReport/MarketTrends?%3Adisplay_count=n&%3Aorigin=viz_share_link&%3AshowAppBanner=false&%3AshowVizHome=n)
+- For the Final Dashboards click [here](https://prod-useast-b.online.tableau.com/#/site/isueoced/views/BeefCommodityReport/MarketTrends?%3Adisplay_count=n&%3Aorigin=viz_share_link&%3AshowAppBanner=false&%3AshowVizHome=n)
 
 <br>
 
