@@ -9,7 +9,9 @@ AGMRC Commodity Reports in tableau can be used as preliminary research in determ
 
 <br>
 
-### **Objectives**
+## **Objectives**
+
+<br>
 
 Develop end to end automated report:
 - create two commodity reports(Egg and Beef)
@@ -21,29 +23,56 @@ Develop end to end automated report:
 
 <br>
 
-### **Outcomes**
-
-### Market Consumption Profile
-
-#### Author: Joel Martin
+## **Egg/Beef Commodity Report**
 
 <br>
 
-This page is an overview of the market consumption profile and data behind it.
+#### Cover Page (Egg/Beef)
+- This page includes overview of the commodity and the resources
 
-##### Report Page
+![image](https://user-images.githubusercontent.com/17107300/183332572-bb81e3ad-74c0-439f-9792-a21c691480cc.png)
+
+
+<br>
+
+#### Market and Harvest Trends
+
+- It includes information on Production, sales, price etc.,
+- Analyzing Production Trends(in dozens by states and over the years)
+- Organic Sales(in $)
+- Egg/Cattle price received in $/dozen over the years 
+- Frozen Stocks
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/17107300/183332789-fad814e3-7ff2-4e4c-9289-d20fe76eacfd.png)
+
+<br>
+
+
+#### Market Consumption Profile
+
+- This page is an overview of the market consumption profile and data behind it
+- It has yearly beef expenditure, changes and comparison with national average
+
+
 
 ![Market Consumption Page](Images/Market_Consumption_Page.jpg)
 
-![Average Yearly Egg Expenditure Changes](Images/Average_Yearly_Egg_Expenditure_Changes.jpg)
 
-![2021 Iowa Average Yearly Egg Expenditure](Images/2021_Iowa_Average_Yearly_Egg_Expenditure.jpg)
 
-![2021 Iowa Food Expenditure](Images/2021_Iowa_Food_Expenditure.jpg)
+<br>
 
-![Iowa Food Markets](Images/Iowa_Food_Markets.jpg)
 
-![Iowa Farmers Markets per 100,000 People](Images/Iowa_Farmers_Markets.jpg)
+#### Demographic Profile – Part 1 & Part 2
+
+- It has demographics information like population, race, monthly precipitation info of Iowa, National Level Local Food Market Locations and statewide agricultural export percentages
+
+![image](https://user-images.githubusercontent.com/17107300/183333277-ee59fca9-1ad4-4dd7-80dc-45819a18ae51.png)
+
 
 <br>
 
@@ -101,7 +130,7 @@ The team  brought together backgrounds in Computer Science, Data Science, Econom
 - **Muskan Tantia** - Graduate fellow, Iowa State University, Computer Science
 - **Maxwell Skinner** - Intern, Iowa State University, Data Science & Political Science
 - **Joel Martin** - Intern, Iowa State University, Data Science
-- **Tanishq Jain** - Intern, Clemson University, Computer Science and Economics
+- **Tanishq Jain** - Intern, Clemson University, Statistics & Data Science
 
 <br>
 
