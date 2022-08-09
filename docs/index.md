@@ -119,7 +119,7 @@ The team  brought together backgrounds in Computer Science, Data Science, Econom
 - **Muskan Tantia** - Graduate fellow, Iowa State University, Computer Science
 - **Maxwell Skinner** - Intern, Iowa State University, Data Science & Political Science
 - **Joel Martin** - Intern, Iowa State University, Data Science
-- **Tanishq Jain** - Intern, Clemson University, Statistics & Data Science
+- **Tanishq Jain** - Intern, Iowa State University, Statistics & Data Science
 
 <br>
 
